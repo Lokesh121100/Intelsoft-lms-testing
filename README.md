@@ -1,1 +1,0 @@
-# IntelSoft-Secure-Sharing
