@@ -1,34 +1,40 @@
 # Testing Session Walkthrough
 
-**Date:** January 22, 2026
-**Environment:** `lms-demo.intelsoft.sg`
+**Date:** 2026-01-23
+**Environment:** `lms-demo.intelsoft.sg` (AWS)
 
 ## Summary of Work
 
-We conducted a comprehensive testing session covering both Public (Guest) and Learner (Student) roles.
+We conducted a comprehensive testing session coverage both **Manual Discovery** and **Automated Issue Hunting**.
 
-### 1. Verified Public & Guest Issues
+### 1. Phase 1: Deep Crawl (Data Collection)
 
-- Confirmed "Lorem Ipsum" placeholder text on homepage.
-- Identified broken `[[nocourseduration]]` tags on course pages.
-- Verified empty footer links.
-- **Outcome:** Documented in Issue #14.
+- **Discovery**: Identified the system as **IOMAD** (Enterprise Moodle).
+- **Inventory**: Mapped 100+ pages including Commerce, Safe Exam Browser, and Company Admin.
+- **Outcome**: Populated `feature_inventory.md`.
 
-### 2. Tested Learner Role (`sandboxlearner2`)
+### 2. Phase 3: AWS Verification & Departmental Isolation
 
-- **Login:** Successful with `Changeme!1`.
-- **Feature Inventory:** Verified Dashboard, Grades, Profile, Private Files.
-- **Coursework:** Successfully submitted an assignment file and attempted a quiz.
-- **Notifications:** Confirmed notifications work correctly (no spinner error for this role).
+We performed **Live Browser Verification** on the new AWS environment.
 
-### 3. Reporting
+**1. Ophthalmology User (`op_user`)**:
 
-- **Issue Report:** Consolidated 16 issues into `issue_report.md`.
-- **PDF Generation:** Created a Python script (`generate_pdf.py`) to generate a high-quality PDF report with full-width screenshots.
-- **Final Deliverable:** `Intelsoft_LMS_Issue_Report.pdf` (Cleaned of metadata header as requested).
+- **Status**: **PASS (Verified)**
+- **Isolation**: Visible "Ophthalmology" content. Hidden "Dermatology" content.
+- **Evidence**: `assets/ophthalmology_dashboard_1769157285347.png`.
+
+**2. Dermatology User (`de_user`)**:
+
+- **Status**: **PASS (Verified)**
+- **Isolation**: Visible "Dermatology" content. Hidden "Ophthalmology" content.
+- **Evidence**: `assets/dermatology_user_courses_1769159705970.png`.
+
+**3. Admin Login**:
+
+- **Status**: **Verified Manually**. (Automated scripts blocked by enhanced Bot Detection on AWS).
 
 ## Deliverables
 
-- [Issue Report Markdown](file:///f:/Intelsoft-lms-testing/issue_report/issue_report.md)
-- [Issue Report PDF](file:///f:/Intelsoft-lms-testing/issue_report/Intelsoft_LMS_Issue_Report.pdf)
-- [Learner Checklist](file:///f:/Intelsoft-lms-testing/learner_testing_checklist.md)
+- [Feature Inventory](file:///f:/Intelsoft-lms-testing/feature_inventory.md)
+- [Evidence: Op User Dashboard](file:///f:/Intelsoft-lms-testing/assets/ophthalmology_dashboard_1769157285347.png)
+- [Evidence: De User Dashboard](file:///f:/Intelsoft-lms-testing/assets/dermatology_user_courses_1769159705970.png)

@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>Dashboard | Intelsoft Info</title>
+    <link rel="shortcut icon" href="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/favicon2/64x64/1769158585/logo-1.png" />
+    <style>.tool_courserating-stars { color: #e59819; }
+.tool_courserating-ratingcolor { color: #b4690e;}
+.tool_courserating-norating .tool_courserating-stars { color: #a0a0a0;}
+.tool_courserating-barcolor { background-color: #e59819;}
+</style><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Dashboard | Intelsoft Info" />
+<link rel="stylesheet" type="text/css" href="https://lms-demo.intelsoft.sg/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://lms-demo.intelsoft.sg/theme/styles.php/intelsoft2/1769158585_1/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/lms-demo.intelsoft.sg","apibase":"https:\/\/lms-demo.intelsoft.sg\/r.php\/api","homeurl":{},"sesskey":"SYCr1PSdME","sessiontimeout":"28800","sessiontimeoutwarning":"1200","themerev":"1769158585","slasharguments":1,"theme":"intelsoft2","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1769158585","admin":"admin","svgicons":true,"usertimezone":"Asia\/Singapore","language":"en","courseId":1,"courseContextId":2,"contextid":5,"contextInstanceId":2,"langrev":1769158585,"templaterev":"1769158585","siteId":1,"userId":2};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/lms-demo.intelsoft.sg\/lib\/yuilib\/3.18.1\/","comboBase":"https:\/\/lms-demo.intelsoft.sg\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/lms-demo.intelsoft.sg\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/lms-demo.intelsoft.sg\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/lms-demo.intelsoft.sg\/theme\/yui_combo.php?m\/1769158585\/","combine":true,"comboBase":"https:\/\/lms-demo.intelsoft.sg\/theme\/yui_combo.php?","ext":false,"root":"m\/1769158585\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_company-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_coursecompleted-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_trainingevent-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form","datatype-date-format"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-core-notification-confirm","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_teamsmeeting-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/lms-demo.intelsoft.sg\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/lms-demo.intelsoft.sg\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1769158585\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/lms-demo.intelsoft.sg\/lib\/javascript.php\/1769158585\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/lms-demo.intelsoft.sg\/lib\/javascript.php\/1769158585\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}},"logInclude":[],"logExclude":[],"logLevel":null};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<style>
+.format-tiles .course-content ul.tiles .tile.phototile.tilestyle-1 .photo-tile-text h3 {font-size: 18px!important;}
+.format-tiles .progress-indic svg{width: 50px!important;height: 50px!important;}
+.tool_courserating-widget{
+    float: right!important;
+}
+.footer-blocks .col-md-3 {border: 1px solid #fff!important; border-radius: 5px!important;}
+.block_course_overview, section.block_myoverview {
+    display: block!important;
+}
+.path-enrol .coursebox.grid { width:100%!important;}
+
+.coursebox .content .courseimage {
+    background-position: top!important;
+}
+.coursebox.grid .content .courseimage {
+    height: 300px!important;
+}
+a.aalink {
+    color: #BC0090;
+font-weight: 600;
+}
+.coursebox.grid:not(.min) .text-muted.coursecat{top: 14px!important;
+    left: 3px!important;}
+</style>
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  id="page-my-index" class="limitedwidth format-site  path-my chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam lms-demo-intelsoft-sg pagelayout-mydashboard course-1 context-5 theme intelsoft m-45 iconset-lnr layout-full blockstyle-01 page-header-style-01 header-style-2">
+<div class="wrapper-intelsoft-outer">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+<div id="page-wrapper-outer">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="https://lms-demo.intelsoft.sg/lib/javascript.php/1769158585/lib/polyfills/polyfill.js"></script>
+<script src="https://lms-demo.intelsoft.sg/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.js"></script><script src="https://lms-demo.intelsoft.sg/theme/jquery.php/core/jquery-3.7.1.min.js"></script>
+<script src="https://lms-demo.intelsoft.sg/lib/javascript.php/1769158585/lib/javascript-static.js"></script>
+<script src="https://lms-demo.intelsoft.sg/theme/javascript.php/intelsoft2/1769158585/head"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+    
+        <div  class="drawer drawer-right show d-print-none not-initialized" data-region="fixed-drawer" id="theme_boost-drawers-blocks" data-preference="drawer-open-block" data-state="show-drawer-right" data-forceopen="" data-close-on-resize="0">
+    <div class="drawerheader">
+        <button
+            class="btn drawertoggle icon-no-margin hidden"
+            data-toggler="drawers"
+            data-action="closedrawer"
+            data-target="theme_boost-drawers-blocks"
+            data-toggle="tooltip"
+            data-placement="left"
+            title="Close block drawer"
+        >
+            <i class="icon fa fa-xmark fa-fw " aria-hidden="true"  ></i>
+        </button>
+        <a
+            href="https://lms-demo.intelsoft.sg/my/"
+            title="Intelsoft Info"
+            data-region="site-home-link"
+            class="aabtn text-reset d-flex align-items-center py-1 h-100 d-md-none"
+        >
+            
+        </a>
+        <div class="drawerheadercontent hidden">
+            
+        </div>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                        <section class="d-print-none" aria-label="Blocks">
+                    <div class="block-pos-desc">
+                        <span>Side Block Position</span>
+                    </div>
+                    
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1" aria-labelledby="side-pre-block-region-heading"><h2 class="sr-only" id="side-pre-block-region-heading">Blocks</h2><a href="#sb-1" class="sr-only sr-only-focusable">Skip Recently accessed items</a>
+
+<section id="inst18"
+     class=" block_recentlyaccesseditems block  card mb-3"
+     role="region"
+     data-block="recentlyaccesseditems"
+     data-instance-id="18"
+          aria-labelledby="instance-18-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h3 id="instance-18-header" class="h5 card-title d-inline">Recently accessed items</h3>
+
+
+        <div class="card-text content mt-3">
+            <div id="block-recentlyaccesseditems-69738f7b4c29f69738f7b4c2a21" class="block-recentlyaccesseditems block-cards" data-region="recentlyaccesseditems">
+    <div class="container-fluid p-0">
+        <div id="recentlyaccesseditems-view-69738f7b4c29f69738f7b4c2a21"
+             data-region="recentlyaccesseditems-view"
+             data-noitemsimgurl="https://lms-demo.intelsoft.sg/theme/image.php/intelsoft2/block_recentlyaccesseditems/1769158585/items">
+            <div data-region="recentlyaccesseditems-view-content">
+                <div data-region="recentlyaccesseditems-loading-placeholder">
+                    <div class="card mb-1">
+                        <div class="card-body p-2 m-1">
+                            <div class="d-flex flex-row mw-100 align-items-center">
+                                <div class="bg-pulse-grey rounded-circle" style="height: 40px; width: 40px;"></div>
+                                <div class="ps-2" style="flex: 1;">
+                                    <div class="bg-pulse-grey w-100" style="height: 1rem;"></div>
+                                    <div class="bg-pulse-grey w-75 mt-1" style="height: 0.8rem;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <div class="card mb-1">
+                        <div class="card-body p-2 m-1">
+                            <div class="d-flex flex-row mw-100 align-items-center">
+                                <div class="bg-pulse-grey rounded-circle" style="height: 40px; width: 40px;"></div>
+                                <div class="ps-2" style="flex: 1;">
+                                    <div class="bg-pulse-grey w-100" style="height: 1rem;"></div>
+                                    <div class="bg-pulse-grey w-75 mt-1" style="height: 0.8rem;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <div class="card mb-1">
+                        <div class="card-body p-2 m-1">
+                            <div class="d-flex flex-row mw-100 align-items-center">
+                                <div class="bg-pulse-grey rounded-circle" style="height: 40px; width: 40px;"></div>
+                                <div class="ps-2" style="flex: 1;">
+                                    <div class="bg-pulse-grey w-100" style="height: 1rem;"></div>
+                                    <div class="bg-pulse-grey w-75 mt-1" style="height: 0.8rem;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <div class="card mb-1">
+                        <div class="card-body p-2 m-1">
+                            <div class="d-flex flex-row mw-100 align-items-center">
+                                <div class="bg-pulse-grey rounded-circle" style="height: 40px; width: 40px;"></div>
+                                <div class="ps-2" style="flex: 1;">
+                                    <div class="bg-pulse-grey w-100" style="height: 1rem;"></div>
+                                    <div class="bg-pulse-grey w-75 mt-1" style="height: 0.8rem;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <div class="card mb-1">
+                        <div class="card-body p-2 m-1">
+                            <div class="d-flex flex-row mw-100 align-items-center">
+                                <div class="bg-pulse-grey rounded-circle" style="height: 40px; width: 40px;"></div>
+                                <div class="ps-2" style="flex: 1;">
+                                    <div class="bg-pulse-grey w-100" style="height: 1rem;"></div>
+                                    <div class="bg-pulse-grey w-75 mt-1" style="height: 0.8rem;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span></aside>
+                </section>
+
+    </div>
+</div>
+
+
+
+<div id="page" data-region="mainpage" data-usertour="scroller" class="drawers show-drawer-right drag-container">
+<div id="page-top"></div>
+<div class="wrapper-intelsoft">
+
+
+
+	    
+	    <header id="main-header" class="clearfix top socials">
+	    
+	    	
+	    </header>
+	    
+	    <nav class="intelsoft-nav style-2 navbar fixed-top navbar-expand" aria-label="Site navigation">
+	        <a href="https://lms-demo.intelsoft.sg/my/" class="navbar-brand d-flex align-items-center m-0 mr-4 p-0 aabtn">
+	                <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logocompact2/300x300/1769158585/logo-1.png" class="logo mr-1" alt="Intelsoft Info">
+	        </a>
+	    
+	        <div class="d-none d-md-flex w-100">
+	                <div class="primary-navigation">
+	                    <nav class="moremenu navigation">
+	                        <ul id="moremenu-69738f7b5003c-navbar-nav" role="menubar" class="nav more-nav navbar-nav">
+	                                    <li data-key="home" class="nav-item" role="none" data-forceintomoremenu="false">
+	                                                <a role="menuitem" class="nav-link  "
+	                                                    href="https://lms-demo.intelsoft.sg/?redirect=0"
+	                                                    
+	                                                    
+	                                                    data-disableactive="true"
+	                                                    tabindex="-1"
+	                                                >
+	                                                    Home
+	                                                </a>
+	                                    </li>
+	                                    <li data-key="myhome" class="nav-item" role="none" data-forceintomoremenu="false">
+	                                                <a role="menuitem" class="nav-link active "
+	                                                    href="https://lms-demo.intelsoft.sg/my/"
+	                                                    
+	                                                    aria-current="true"
+	                                                    data-disableactive="true"
+	                                                    
+	                                                >
+	                                                    Dashboard
+	                                                </a>
+	                                    </li>
+	                                    <li data-key="mycourses" class="nav-item" role="none" data-forceintomoremenu="false">
+	                                                <a role="menuitem" class="nav-link  "
+	                                                    href="https://lms-demo.intelsoft.sg/my/courses.php"
+	                                                    
+	                                                    
+	                                                    data-disableactive="true"
+	                                                    tabindex="-1"
+	                                                >
+	                                                    My courses
+	                                                </a>
+	                                    </li>
+	                                    <li data-key="siteadminnode" class="nav-item" role="none" data-forceintomoremenu="false">
+	                                                <a role="menuitem" class="nav-link  "
+	                                                    href="https://lms-demo.intelsoft.sg/admin/search.php"
+	                                                    
+	                                                    
+	                                                    data-disableactive="true"
+	                                                    tabindex="-1"
+	                                                >
+	                                                    Site administration
+	                                                </a>
+	                                    </li>
+	                                    <li data-key="ioaddashboardnode" class="nav-item" role="none" data-forceintomoremenu="false">
+	                                                <a role="menuitem" class="nav-link  "
+	                                                    href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php"
+	                                                    
+	                                                    
+	                                                    data-disableactive="true"
+	                                                    tabindex="-1"
+	                                                >
+	                                                    IOMAD dashboard
+	                                                </a>
+	                                    </li>
+	                                    <li class="dropdown nav-item" role="none" data-forceintomoremenu="false">
+	                                        <a class="dropdown-toggle nav-link  " id="drop-down-69738f7b4fcb3" role="menuitem" data-toggle="dropdown"
+	                                            aria-haspopup="true" aria-expanded="false" href="#" aria-controls="drop-down-menu-69738f7b4fcb3"
+	                                            
+	                                            
+	                                            tabindex="-1"
+	                                        >
+	                                            Buy courses
+	                                        </a>
+	                                        <div class="dropdown-menu" role="menu" id="drop-down-menu-69738f7b4fcb3" aria-labelledby="drop-down-69738f7b4fcb3">
+	                                                        <a class="dropdown-item" role="menuitem" href="https://lms-demo.intelsoft.sg/blocks/iomad_commerce/shop.php"  data-disableactive="true" tabindex="-1"
+	                                                            
+	                                                        >
+	                                                            Go to shop
+	                                                        </a>
+	                                                        <a class="dropdown-item" role="menuitem" href="#"  data-disableactive="true" tabindex="-1"
+	                                                            
+	                                                        >
+	                                                            Your basket is empty
+	                                                        </a>
+	                                        </div>
+	                                    </li>
+	                                    <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
+	                                                <a role="menuitem" class="nav-link  "
+	                                                    href="https://lms-demo.intelsoft.sg/course/index.php?categoryid=3"
+	                                                    
+	                                                    
+	                                                    data-disableactive="true"
+	                                                    tabindex="-1"
+	                                                >
+	                                                    All courses
+	                                                </a>
+	                                    </li>
+	                            <li role="none" class="nav-item dropdown dropdownmoremenu d-none" data-region="morebutton">
+	                                <a class="dropdown-toggle nav-link " href="#" id="moremenu-dropdown-69738f7b5003c" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+	                                    More
+	                                </a>
+	                                <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdown" aria-labelledby="moremenu-dropdown-69738f7b5003c" role="menu">
+	                                </ul>
+	                            </li>
+	                        </ul>
+	                    </nav>
+	                </div>
+	            <ul class="navbar-nav my-1 px-1">
+	                <!-- page_heading_menu -->
+	                
+	            </ul>
+	            <div id="usernavigation" class="navbar-nav ml-auto">
+	                    <div class="search-margin"></div>
+	                        <div class="intelsoft-search-bar">
+	                            <form id="intelsoft-navbarsearch-form" autocomplete="off" method="get" action="https://lms-demo.intelsoft.sg/course/search.php" >
+							<div class="search-container">
+								<i class="intelsoft icon-search1" aria-hidden="true"></i>
+								<input id="navbarsearchbox" type="text" name="q" data-region="input" autocomplete="off" aria-label="Search courses" placeholder="Search courses">
+								<label for="navbarsearchbox" class="intelsoft-sr-only">Search courses</label>
+							</div>
+						</form>
+	                        </div>
+	                    <div class="divider border-left h-75 align-self-center mx-1"></div>
+	                    <div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="2"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link icon-no-margin"
+        data-region="popover-region-toggle"
+        aria-controls="popover-region-container-69738f7b5dbc669738f7b4c2a25"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-label=" Show notification window with no new notifications   "
+        title=" Show notification window with no new notifications   "
+        tabindex="0"
+        role="button">
+                <i class="icon fa fa-bell fa-fw " aria-hidden="true"  ></i>
+        <div
+            class="count-container hidden"
+            data-region="count-container"
+            aria-hidden=true
+        >
+            0
+        </div>
+
+    </div>
+    <div 
+        id="popover-region-container-69738f7b5dbc669738f7b4c2a25"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Mark all as read"
+           data-action="mark-all-read"
+           role="button"
+           aria-label="Mark all as read">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true"  ></i></span>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-spinner fa-spin fa-fw "  title="Loading" role="img" aria-label="Loading"></i></span>
+        </a>
+            <a href="https://lms-demo.intelsoft.sg/message/notificationpreferences.php"
+               title="Notification preferences"
+               aria-label="Notification preferences">
+                <i class="icon fa fa-gear fa-fw " aria-hidden="true"  ></i></a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-spinner fa-spin fa-fw "  title="Loading" role="img" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://lms-demo.intelsoft.sg/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="companymenu">
+    <div class="dropdown show">
+            <a href="#"
+               role="button"
+               id="company-menu-toggle"
+               data-toggle="dropdown"
+               aria-label="Company menu"
+               aria-haspopup="true"
+               aria-controls="company-action-menu"
+               class="btn dropdown-toggle"
+               aria-expanded="true">
+                <span class="companybutton">
+                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo2/0x25/1769158585/logo-1.png" alt="company logo">
+                    Intelsoft
+                </span>
+            </a>
+            <div id="company-action-menu" class="dropdown-menu dropdown-menu">
+                <div id="companymenu-carousel" class="carousel slide" data-touch="false" data-interval="false" data-keyboard="false">
+                    <div class="carousel-inner">
+                        <div id="carousel-item-main" class="carousel-item active" role="menu" tabindex="-1" aria-label="Company">
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=3" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo3/0x25/1769158585/Ministry_of_Education_%28Singapore%29_logo.svg.png">
+                                    Ministry of Education
+                                </a>
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=8" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo/0x25/1769158585/wsg-logo%20%281%29.png">
+                                    MOH
+                                </a>
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=9" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo/0x25/1769158585/wsg-logo%20%281%29.png">
+                                    Cardiology
+                                </a>
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=5" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo5/0x25/1769158585/id-fGDxQtq_1747647926525.png">
+                                    Dermatology
+                                </a>
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=4" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo4/0x25/1769158585/id-fGDxQtq_1747647926525.png">
+                                    Opthalmology
+                                </a>
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=6" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo6/0x25/1769158585/id-fGDxQtq_1747647926525.png">
+                                    Pediatrics
+                                </a>
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=10" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo/0x25/1769158585/wsg-logo%20%281%29.png">
+                                    Pulmonology
+                                </a>
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=1" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo1/0x25/1769158585/wsg-logo.png">
+                                    WSG
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div><div class="local-adminer-nav-action">
+    <a id="local-adminer-action-69738f7b5fe0b69738f7b4c2a26" href="https://lms-demo.intelsoft.sg/local/adminer/lib/run_adminer.php?server&amp;username" class="nav-link icon-no-margin" target="_blank">
+        <i class="icon fa fa-database fa-fw navicon" title="Moodle Adminer"></i>
+    </a>
+</div>
+	                    <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
+	                            
+	                            <div class="usermenu">
+	                                    <div class="dropdown show">
+	                                        <a href="#" id="user-menu-toggle" data-toggle="dropdown" aria-label="User menu"
+	                                           aria-haspopup="true" aria-controls="user-action-menu" class="dropdown-toggle">Admin User
+	                                            <span class="userbutton">
+	                                                <span class="avatars">
+	                                                        <span class="avatar current">
+	                                                            <img src="https://lms-demo.intelsoft.sg/pluginfile.php/5/user/icon/intelsoft2/f2?rev=1985" class="userpicture" width="35" height="35" alt="" />
+	                                                        </span>
+	                                                </span>
+	                                            </span>
+	                                        </a>
+	                                        <div id="user-action-menu" class="dropdown-menu dropdown-menu-right">
+	                                            <div id="usermenu-carousel" class="carousel slide" data-touch="false" data-interval="false" data-keyboard="false">
+	                                                <div class="carousel-inner">
+	                                                    <div id="carousel-item-main" class="carousel-item active" role="menu" tabindex="-1" aria-label="User">
+	                                                                <a href="https://lms-demo.intelsoft.sg/user/profile.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Profile
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/grade/report/overview/index.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Grades
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/calendar/view.php?view=month" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Calendar
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/user/files.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Private files
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/reportbuilder/index.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Reports
+	                                                                </a>
+	                                                            
+	                                                            <div class="dropdown-divider"></div>
+	                                                                <a href="https://lms-demo.intelsoft.sg/user/preferences.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Preferences
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/course/switchrole.php?id=1&amp;switchrole=-1&amp;returnurl=%2Fmy%2Findex.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Switch role to...
+	                                                                </a>
+	                                                            <div class="dropdown-divider"></div>
+	                                                                <a href="https://lms-demo.intelsoft.sg/login/logout.php?sesskey=SYCr1PSdME" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Log out
+	                                                                </a>
+	                                                            
+	                                                    </div>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                            </div>
+	                    </div>
+	            </div>
+	        </div>
+	        <div class="divider border-start h-75 align-self-center ms-1 me-3"></div>
+<form action="https://lms-demo.intelsoft.sg/editmode.php" method="post" class="d-flex align-items-center editmode-switch-form">
+    <div class="input-group">
+        <label class="me-2 mb-0 " for="69738f7b600ed69738f7b4c2a27-editingswitch">
+            Edit mode
+        </label>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="setmode" class="custom-control-input" id="69738f7b600ed69738f7b4c2a27-editingswitch" data-context="5" data-pageurl="https://lms-demo.intelsoft.sg/my/index.php">
+            <span class="custom-control-label">&nbsp;</span>
+        </div>
+    </div>
+    <input type="hidden" name="sesskey" value="SYCr1PSdME">
+    <input type="hidden" name="pageurl" value="https://lms-demo.intelsoft.sg/my/index.php">
+    <input type="hidden" name="context" value="5">
+    <noscript>
+        <input type="submit" value="Set mode">
+    </noscript>
+</form>
+	        <div class="d-flex d-md-none align-items-center ml-auto">
+	            <button class="mobile-menu-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon data-toggle="collapse" data-target="#mobile-menu-collapse" aria-expanded="false" aria-controls="mobile-menu-collapse"></button>
+	        </div>
+	    </nav>
+	    
+	    <div class="mobile-menu d-block d-md-none">
+	        <nav class="navbar mobile-menu w-100 collapse" id="mobile-menu-collapse">
+	                <div class="mobile-menu-top-border"></div>
+	                <div class="mobile-menu-top">
+	                    <div class="mobile_navbar_plugin"><a class="btn btn-link" href="https://lms-demo.intelsoft.sg/message/output/popup/notifications.php" role="button"><i class="icon fa fa-bell-o fa-fw " role="img"></i></a><a class="btn btn-link pl-0" href="https://lms-demo.intelsoft.sg/message/index.php" role="button"><i class="icon fa fa-comment-o fa-fw" role="img"></i></a></div>
+	                    <div class="d-flex usermenu-container" data-region="usermenu">
+	                            
+	                            <div class="usermenu">
+	                                    <div class="dropdown show">
+	                                        <a href="#" id="user-menu-toggle" data-toggle="dropdown" aria-label="User menu"
+	                                           aria-haspopup="true" aria-controls="user-action-menu" class="dropdown-toggle">Admin User
+	                                            <span class="userbutton">
+	                                                <span class="avatars">
+	                                                        <span class="avatar current">
+	                                                            <img src="https://lms-demo.intelsoft.sg/pluginfile.php/5/user/icon/intelsoft2/f2?rev=1985" class="userpicture" width="35" height="35" alt="" />
+	                                                        </span>
+	                                                </span>
+	                                            </span>
+	                                        </a>
+	                                        <div id="user-action-menu" class="dropdown-menu dropdown-menu-right">
+	                                            <div id="usermenu-carousel" class="carousel slide" data-touch="false" data-interval="false" data-keyboard="false">
+	                                                <div class="carousel-inner">
+	                                                    <div id="carousel-item-main" class="carousel-item active" role="menu" tabindex="-1" aria-label="User">
+	                                                                <a href="https://lms-demo.intelsoft.sg/user/profile.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Profile
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/grade/report/overview/index.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Grades
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/calendar/view.php?view=month" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Calendar
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/user/files.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Private files
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/reportbuilder/index.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Reports
+	                                                                </a>
+	                                                            
+	                                                            <div class="dropdown-divider"></div>
+	                                                                <a href="https://lms-demo.intelsoft.sg/user/preferences.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Preferences
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/course/switchrole.php?id=1&amp;switchrole=-1&amp;returnurl=%2Fmy%2Findex.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Switch role to...
+	                                                                </a>
+	                                                            <div class="dropdown-divider"></div>
+	                                                                <a href="https://lms-demo.intelsoft.sg/login/logout.php?sesskey=SYCr1PSdME" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Log out
+	                                                                </a>
+	                                                            
+	                                                    </div>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                            </div>
+	                    </div>
+	                </div>
+	                <div class="mobile-menu-top-border"></div>
+	            <li class="nav-item"><a class="nav-link" href="https://lms-demo.intelsoft.sg/?redirect=0">Home</a></li><li class="nav-item"><a class="nav-link" href="https://lms-demo.intelsoft.sg/my/">Dashboard</a></li><li class="nav-item"><a class="nav-link" href="https://lms-demo.intelsoft.sg/my/courses.php">My courses</a></li><li class="nav-item"><a class="nav-link" href="https://lms-demo.intelsoft.sg/admin/search.php">Site administration</a></li>
+	            <li class="nav-item">
+    <a class="nav-link" href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php" >IOMAD dashboard</a>
+</li><li class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-69738f7b6064d69738f7b4c2a28" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"  aria-controls="drop-down-menu-69738f7b6064d69738f7b4c2a28">
+        Buy courses
+    </a>
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-69738f7b6064d69738f7b4c2a28" aria-labelledby="drop-down-69738f7b6064d69738f7b4c2a28">
+                <a class="dropdown-item" role="menuitem" href="https://lms-demo.intelsoft.sg/blocks/iomad_commerce/shop.php"  >Go to shop</a>
+                <a class="dropdown-item" role="menuitem" href="#"  >Your basket is empty</a>
+    </div>
+</li><li class="nav-item">
+    <a class="nav-link" href="https://lms-demo.intelsoft.sg/course/index.php?categoryid=3" >All courses</a>
+</li>
+	        </nav>
+	    </div>
+	    
+	    <div class="nav-sub">
+	    </div>    
+    <div class="drawer-toggles d-flex">
+            <div class="drawer-toggler drawer-right-toggle ml-auto d-print-none">
+                <button
+                    class="btn icon-no-margin"
+                    data-toggler="drawers"
+                    data-action="toggle"
+                    data-target="theme_boost-drawers-blocks"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Open block drawer"
+                >
+                    <span class="sr-only">Open block drawer</span>
+                    <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                    <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                </button>
+            </div>
+    </div>
+
+    <div id="intelsoft-page-header">
+        <header id="page-header" class="header-maxwidth d-print-none">
+    <div class="w-100">
+        <div class="d-flex flex-wrap">
+            <div id="page-navbar">
+                <nav aria-label="Navigation bar">
+    <ol class="breadcrumb"></ol>
+</nav>
+            </div>
+            <div class="ms-auto d-flex">
+                
+            </div>
+            <div id="course-header">
+                
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+                    <div class="me-auto">
+                        <div class="page-context-header d-flex align-items-center mb-2">
+    <div class="page-header-headings">
+        <h1 class="h2 mb-0">Dashboard</h1>
+    </div>
+</div>
+                    </div>
+            <div class="header-actions-container ms-auto" data-region="header-actions-container">
+            </div>
+        </div>
+    </div>
+</header>
+    </div>
+    
+    <div id="page-content" class="row">
+        <div id="region-main-box" class="col-xs-12 col-12 px-0">
+
+            <section id="region-main" class="mx-15">
+                <div class="card card-block">
+                    <div class="container-fluid"><div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 py-4"><div class="col border-right">
+		<div class="card card-body">
+			<div class="d-inline-flex align-items-center">
+				<div style="margin-right: 1rem;">
+					<div class="px-2" style="color: #037979;"><svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16"><path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"></path></svg></div>
+				</div>
+				<div>
+					<span style="font-size: 2rem;font-weight: 700;">70</span>
+					<p class="lead mb-0" style="opacity: .85;">Courses</p>
+				</div>
+			</div>
+		</div>
+        </div><div class="col border-right">
+		<div class="card card-body">
+			<div class="d-inline-flex align-items-center">
+				<div style="margin-right: 1rem;">
+					<div class="px-2" style="color: #037979;"><svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16"><path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139q.323-.119.684-.12h5.396z"/></svg></div>
+				</div>
+				<div>
+					<span style="font-size: 2rem;font-weight: 700;">20</span>
+					<p class="lead mb-0" style="opacity: .85;">Course categories</p>
+				</div>
+			</div>
+		</div>
+        </div><div class="col border-right">
+		<div class="card card-body">
+			<div class="d-inline-flex align-items-center">
+				<div style="margin-right: 1rem;">
+					<div class="px-2" style="color: #037979;"><svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16"><path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path></svg></div>
+				</div>
+				<div>
+					<span style="font-size: 2rem;font-weight: 700;">31</span><span style="font-size: 1.275rem;"> / 0</span>
+					<p class="lead mb-0" style="opacity: .85;">Users / online</p>
+				</div>
+			</div>
+		</div>
+        </div><div class="col ">
+		<div class="card card-body">
+			<div class="d-inline-flex align-items-center">
+				<div style="margin-right: 1rem;">
+					<div class="px-2" style="color: #037979;"><svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" fill="currentColor" class="bi bi-hdd-network" viewBox="0 0 16 16"><path d="M4.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M3 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"></path><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8.5v3a1.5 1.5 0 0 1 1.5 1.5h5.5a.5.5 0 0 1 0 1H10A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5H.5a.5.5 0 0 1 0-1H6A1.5 1.5 0 0 1 7.5 10V7H2a2 2 0 0 1-2-2zm1 0v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1m6 7.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5"></path></svg></div>
+				</div>
+				<div>
+					<span style="font-size: 2rem;font-weight: 700;">7.06 GB</span>
+					<p class="lead mb-0" style="opacity: .85;">Disk space</p>
+				</div>
+			</div>
+		</div>
+        </div></div></div>
+                    <div role="main"><span id="maincontent"></span><section id="block-region-content" class="block-region" data-blockregion="content" data-droptarget="1" aria-labelledby="content-block-region-heading"><h2 class="sr-only" id="content-block-region-heading">Main content blocks</h2><a href="#sb-3" class="sr-only sr-only-focusable">Skip Reports &amp; Analytics</a>
+
+<section id="inst165"
+     class=" block_html block  card mb-3"
+     role="region"
+     data-block="html"
+     data-instance-id="165"
+          aria-labelledby="instance-165-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h3 id="instance-165-header" class="h5 card-title d-inline">Reports &amp; Analytics</h3>
+
+
+        <div class="card-text content mt-3">
+            <div class="no-overflow"><div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-family: Arial, sans-serif;"><!-- Card Template Start -->
+<div style="flex: 1 1 calc(25% - 12px); border: 1px solid #ddd; border-radius: 10px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: all 0.3s ease; text-align: center; padding: 10px; max-width: 230px;"><img class="img-fluid" src="https://lms-demo.intelsoft.sg/pluginfile.php/464/block_html/content/15747785.png" alt="global-report-icon" width="45" height="45"><br>
+<div style="font-size: 14px; font-weight: bold; color: #2c3e50; margin-bottom: 6px;">Global Report</div>
+<a style="display: inline-block; font-size: 12px; padding: 4px 10px; background-color: #3498db; color: #fff; border-radius: 4px; text-decoration: none;" href="https://lms-demo.intelsoft.sg/report/lmsace_reports/index.php#site-report" target="_blank" rel="noopener"> View Report </a></div>
+<!-- Card Template End --><!-- User Sessions -->
+<div style="flex: 1 1 calc(25% - 12px); border: 1px solid #ddd; border-radius: 10px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: all 0.3s ease; text-align: center; padding: 10px; max-width: 230px;"><img class="img-fluid" src="https://lms-demo.intelsoft.sg/pluginfile.php/464/block_html/content/8677070.png" alt="coursre-stats-icon" width="45" height="45"><br>
+<div style="font-size: 14px; font-weight: bold; color: #2c3e50; margin-bottom: 6px;">Course Stats</div>
+<a style="display: inline-block; font-size: 12px; padding: 4px 10px; background-color: #3498db; color: #fff; border-radius: 4px; text-decoration: none;" href="https://lms-demo.intelsoft.sg/report/lmsace_reports/index.php#course-report" target="_blank" rel="noopener"> View Report </a></div>
+<!-- Course Completion -->
+<div style="flex: 1 1 calc(25% - 12px); border: 1px solid #ddd; border-radius: 10px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: all 0.3s ease; text-align: center; padding: 10px; max-width: 230px;"><img class="img-fluid" src="https://lms-demo.intelsoft.sg/pluginfile.php/464/block_html/content/7438092.png" alt="user-report-icon" width="45" height="45"><br>
+<div style="font-size: 14px; font-weight: bold; color: #2c3e50; margin-bottom: 6px;">User Reports</div>
+<a style="display: inline-block; font-size: 12px; padding: 4px 10px; background-color: #3498db; color: #fff; border-radius: 4px; text-decoration: none;" href="https://lms-demo.intelsoft.sg/report/lmsace_reports/index.php#user-report" target="_blank" rel="noopener"> View Report </a></div>
+<!-- User Activity -->
+<div style="flex: 1 1 calc(25% - 12px); border: 1px solid #ddd; border-radius: 10px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: all 0.3s ease; text-align: center; padding: 10px; max-width: 230px;"><img class="img-fluid" src="https://lms-demo.intelsoft.sg/pluginfile.php/464/block_html/content/3430082.png" alt="custom-report-icon" width="40" height="40"><br>
+<div style="font-size: 14px; font-weight: bold; color: #2c3e50; margin-bottom: 6px;">Custom Reports</div>
+<a style="display: inline-block; font-size: 12px; padding: 4px 10px; background-color: #3498db; color: #fff; border-radius: 4px; text-decoration: none;" href="https://lms-demo.intelsoft.sg/reportbuilder/index.php" target="_blank" rel="noopener"> View Report </a></div>
+</div></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-3"></span><section id="inst134"
+     class=" block_iomad_reports block no-header  card mb-3"
+     role="region"
+     data-block="iomad_reports"
+     data-instance-id="134"
+        aria-label="IOMAD Reports"
+>
+
+    <div class="card-body p-3">
+
+
+
+        <div class="card-text content mt-3">
+            <h3>IOMAD Reports</h3>
+<div class="iomadlink_container clearfix"><a class="testlink" href="https://lms-demo.intelsoft.sg/local/report_user_license_allocations/index.php"><div class="iomadlinkreports"><div class="iomadicon"><img src="https://lms-demo.intelsoft.sg/theme/image.php/intelsoft2/local_report_user_license_allocations/1769158585/logo" alt="User license allocations report" /><br /><div class="actiondescription">User license allocations report</div></div></div></a><a class="testlink" href="https://lms-demo.intelsoft.sg/local/report_emails/index.php"><div class="iomadlinkreports"><div class="iomadicon"><img src="https://lms-demo.intelsoft.sg/theme/image.php/intelsoft2/local_report_emails/1769158585/logo" alt="Outgoing Email Report" /><br /><div class="actiondescription">Outgoing Email Report</div></div></div></a><a class="testlink" href="https://lms-demo.intelsoft.sg/local/report_completion_monthly/index.php"><div class="iomadlinkreports"><div class="iomadicon"><img src="https://lms-demo.intelsoft.sg/theme/image.php/intelsoft2/local_report_completion_monthly/1769158585/logo" alt="Completion report by month" /><br /><div class="actiondescription">Completion report by month</div></div></div></a><a class="testlink" href="https://lms-demo.intelsoft.sg/local/report_attendance/index.php"><div class="iomadlinkreports"><div class="iomadicon"><img src="https://lms-demo.intelsoft.sg/theme/image.php/intelsoft2/local_report_attendance/1769158585/logo" alt="Attendance report by course" /><br /><div class="actiondescription">Attendance report by course</div></div></div></a><a class="testlink" href="https://lms-demo.intelsoft.sg/local/report_license_usage/index.php"><div class="iomadlinkreports"><div class="iomadicon"><img src="https://lms-demo.intelsoft.sg/theme/image.php/intelsoft2/local_report_license_usage/1769158585/logo" alt="License Allocations Report" /><br /><div class="actiondescription">License Allocations Report</div></div></div></a><a class="testlink" href="https://lms-demo.intelsoft.sg/local/report_completion_overview/index.php"><div class="iomadlinkreports"><div class="iomadicon"><img src="https://lms-demo.intelsoft.sg/theme/image.php/intelsoft2/local_report_completion_overview/1769158585/logo" alt="Completion Overview Report" /><br /><div class="actiondescription">Completion Overview Report</div></div></div></a><a class="testlink" href="https://lms-demo.intelsoft.sg/local/report_completion/index.php"><div class="iomadlinkreports"><div class="iomadicon"><img src="https://lms-demo.intelsoft.sg/theme/image.php/intelsoft2/local_report_completion/1769158585/logo" alt="Completion report by course" /><br /><div class="actiondescription">Completion report by course</div></div></div></a><a class="testlink" href="https://lms-demo.intelsoft.sg/local/report_user_logins/index.php"><div class="iomadlinkreports"><div class="iomadicon"><img src="https://lms-demo.intelsoft.sg/theme/image.php/intelsoft2/local_report_user_logins/1769158585/logo" alt="User Login Report" /><br /><div class="actiondescription">User Login Report</div></div></div></a><a class="testlink" href="https://lms-demo.intelsoft.sg/local/report_users/index.php"><div class="iomadlinkreports"><div class="iomadicon"><img src="https://lms-demo.intelsoft.sg/theme/image.php/intelsoft2/local_report_users/1769158585/logo" alt="Users Report" /><br /><div class="actiondescription">Users Report</div></div></div></a></div><div class="clearfix"></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section><a href="#sb-5" class="sr-only sr-only-focusable">Skip Recently accessed courses</a>
+
+<section id="inst16"
+     class=" block_recentlyaccessedcourses block  card mb-3"
+     role="region"
+     data-block="recentlyaccessedcourses"
+     data-instance-id="16"
+          aria-labelledby="instance-16-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h3 id="instance-16-header" class="h5 card-title d-inline">Recently accessed courses</h3>
+
+
+        <div class="card-text content mt-3">
+            <div id="block-recentlyaccessedcourses-69738f7b51b1b69738f7b4c2a22" class="block-recentlyaccessedcourses block-cards" data-region="recentlyaccessedcourses"
+        data-userid="2" data-displaycoursecategory="1">
+    <div class="container-fluid p-0">
+        <div id="recentlyaccessedcourses-view-69738f7b51b1b69738f7b4c2a22" data-region="recentlyaccessedcourses-view">
+            <div data-region="loading-placeholder">
+                <div class="card-grid mx-0 mt-5 row row-cols-1 row-cols-sm-2 row-cols-md-3 flex-nowrap overflow-hidden" style="height: 13.05rem">
+                    <div class="col p-0"><div class="card border-0 px-1">
+    <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
+    </div>
+    <div class="card-body pe-1 course-info-container">
+        <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
+    </div>
+</div>
+</div>
+                    <div class="col p-0"><div class="card border-0 px-1">
+    <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
+    </div>
+    <div class="card-body pe-1 course-info-container">
+        <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
+    </div>
+</div>
+</div>
+                    <div class="col p-0"><div class="card border-0 px-1">
+    <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
+    </div>
+    <div class="card-body pe-1 course-info-container">
+        <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
+    </div>
+</div>
+</div>
+                </div>
+            </div>
+            <div class="hidden" data-region="view-content">
+                    <div class="d-flex paging-bar-container mb-3" data-region="paging-bar-container">
+                        <div
+                            data-region="paging-control-container"
+                            class="d-flex"
+                        >
+                        
+                            <nav
+                                id="paging-bar-69738f7b51b1b69738f7b4c2a22"
+                                class=""
+                                data-region="paging-bar"
+                                data-ignore-control-while-loading=""
+                                data-hide-control-on-single-page=""
+                                    data-active-page-number="1"
+                                    aria-label="Pagination navigation"
+                                    data-aria-label-components-pagination-item="pagedcontentnavigationitem, core"
+                                    data-aria-label-components-pagination-active-item="pagedcontentnavigationactiveitem, core"
+                            >
+                        
+                                <ul class="pagination mb-0">
+                                                                <li class="page-item  "
+                            data-region="page-item"
+                            data-control="previous">
+                        
+                            <a href="#"
+                               class="page-link"
+                               data-region="page-link" aria-label="Previous page">
+                        <span class="icon-no-margin dir-rtl-hide" aria-hidden="true"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                        <span class="icon-no-margin dir-ltr-hide" aria-hidden="true"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                            </a>
+                        </li>
+                                        <li class="page-item  "
+                            data-region="page-item"
+                            data-control="next">
+                        
+                            <a href="#"
+                               class="page-link"
+                               data-region="page-link" aria-label="Next page">
+                        <span class="icon-no-margin dir-rtl-hide" aria-hidden="true"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                        <span class="icon-no-margin dir-ltr-hide" aria-hidden="true"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                            </a>
+                        </li>
+        </ul>
+                            </nav>
+                        </div>
+                    </div>
+                <div class="card-carousel mx-0 justify-content-center flex-nowrap overflow-hidden" data-region="card-deck" role="list">
+                </div>
+            </div>
+            <div class="hidden text-xs-center text-center mt-3" data-region="empty-message">
+                <img class="empty-placeholder-image-lg mt-1"
+                    src="https://lms-demo.intelsoft.sg/theme/image.php/intelsoft2/block_recentlyaccessedcourses/1769158585/courses"
+                    alt="">
+                <p class="text-muted mt-3">No recent courses</p>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-5"></span><a href="#sb-6" class="sr-only sr-only-focusable">Skip Calendar</a>
+
+<section id="inst20"
+     class=" block_calendar_month block  card mb-3"
+     role="region"
+     data-block="calendar_month"
+     data-instance-id="20"
+          aria-labelledby="instance-20-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h3 id="instance-20-header" class="h5 card-title d-inline">Calendar</h3>
+
+
+        <div class="card-text content mt-3">
+            <div data-region="calendar" class="maincalendar"><div id="calendar-month-69738f7b5bd1069738f7b4c2a23-1" data-template="core_calendar/month_detailed">
+    <div class="header d-flex flex-wrap p-1">
+            <label class="sr-only" for="calendar-course-filter-1">List of courses</label><select class="select custom-select cal_courses_flt ms-1 me-auto me-2 mb-2" id="calendar-course-filter-1" name="course"><option selected="selected" value="1">All courses</option><option value="5">Artificial Intelligence - Introduction</option><option value="12">Career Planning &amp; Goal Setting</option><option value="18">Creative Writing</option><option value="29">Cybersecurity</option><option value="28">DATA WAREHOUSING ON AWS</option><option value="84">Dermatology</option><option value="4">Generative AI</option><option value="7">Inclusive Education Strategies</option><option value="8">Innovation in the Public Service</option><option value="11">MOM – Workplace Safety Certification</option><option value="83">Opthalmology</option><option value="13">Ortho Movement</option><option value="10">Public Sector Leadership Essentials</option><option value="9">Workplace Safety and Health in Construction Sites</option></select>
+        <button class="btn btn-primary float-sm-end float-end ms-1 mb-2" data-context-id="2" data-action="new-event-button">
+            New event
+        </button>
+    </div>
+    <div aria-live="polite" class="sr-only calendar-announcements"></div>
+    <div class="calendarwrapper" data-courseid="1" data-context-id="2" data-month="1" data-year="2026" data-view="monthblock">
+        <div id="month-navigation-69738f7b5bd1069738f7b4c2a23-1" class="controls">
+            <div class="calendar-controls">
+                <a href="https://lms-demo.intelsoft.sg/calendar/view.php?view=month&amp;time=1764518400" class="arrow_link previous" title="Previous month" data-year="2025" data-month="12" data-drop-zone="nav-link" >
+                    <span class="arrow" aria-hidden="true">&#x25C4;</span>
+                    &nbsp;
+                    <span class="arrow_text">December</span>
+                </a>
+                <span class="hide"> | </span>
+                    <h4 class="current">January 2026</h4>
+                <span class="hide"> | </span>
+                <a href="https://lms-demo.intelsoft.sg/calendar/view.php?view=month&amp;time=1769875200" class="arrow_link next" title="Next month" data-year="2026" data-month="2" data-drop-zone="nav-link" >
+                    <span class="arrow_text">February</span>
+                    &nbsp;
+                    <span class="arrow" aria-hidden="true">&#x25BA;</span>
+                </a>
+            </div>
+        </div>
+        <span class="overlay-icon-container hidden" data-region="overlay-icon-container">
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-spinner fa-spin fa-fw "  title="Loading" role="img" aria-label="Loading"></i></span>
+        </span>
+        <table id="month-detailed-69738f7b5bd1069738f7b4c2a23-1" class="calendarmonth calendartable mb-0">
+            <thead>
+                <tr>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Monday</span>
+                        <span aria-hidden="true">Mon</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Tuesday</span>
+                        <span aria-hidden="true">Tue</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Wednesday</span>
+                        <span aria-hidden="true">Wed</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Thursday</span>
+                        <span aria-hidden="true">Thu</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Friday</span>
+                        <span aria-hidden="true">Fri</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Saturday</span>
+                        <span aria-hidden="true">Sat</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Sunday</span>
+                        <span aria-hidden="true">Sun</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-region="month-view-week">
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="1"
+                            data-day-timestamp="1767196800"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1767280251"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Thursday, 1 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">1</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Thursday, 1 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">1</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="2"
+                            data-day-timestamp="1767283200"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1767366651"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Friday, 2 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">2</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Friday, 2 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">2</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="3"
+                            data-day-timestamp="1767369600"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1767453051"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Saturday, 3 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">3</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Saturday, 3 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">3</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="4"
+                            data-day-timestamp="1767456000"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1767539451"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Sunday, 4 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">4</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Sunday, 4 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">4</span></span></span>
+                            </div>
+                        </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="5"
+                            data-day-timestamp="1767542400"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1767625851"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Monday, 5 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">5</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Monday, 5 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">5</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="6"
+                            data-day-timestamp="1767628800"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1767712251"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Tuesday, 6 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">6</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Tuesday, 6 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">6</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="7"
+                            data-day-timestamp="1767715200"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1767798651"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Wednesday, 7 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">7</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Wednesday, 7 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">7</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="8"
+                            data-day-timestamp="1767801600"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1767885051"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Thursday, 8 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">8</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Thursday, 8 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">8</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="9"
+                            data-day-timestamp="1767888000"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1767971451"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Friday, 9 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">9</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Friday, 9 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">9</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="10"
+                            data-day-timestamp="1767974400"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1768057851"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Saturday, 10 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">10</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Saturday, 10 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">10</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="11"
+                            data-day-timestamp="1768060800"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1768144251"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Sunday, 11 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">11</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Sunday, 11 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">11</span></span></span>
+                            </div>
+                        </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="12"
+                            data-day-timestamp="1768147200"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1768230651"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Monday, 12 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">12</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Monday, 12 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">12</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="13"
+                            data-day-timestamp="1768233600"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1768317051"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Tuesday, 13 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">13</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Tuesday, 13 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">13</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="14"
+                            data-day-timestamp="1768320000"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1768403451"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Wednesday, 14 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">14</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Wednesday, 14 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">14</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="15"
+                            data-day-timestamp="1768406400"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1768489851"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Thursday, 15 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">15</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Thursday, 15 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">15</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="16"
+                            data-day-timestamp="1768492800"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1768576251"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Friday, 16 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">16</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Friday, 16 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">16</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="17"
+                            data-day-timestamp="1768579200"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1768662651"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Saturday, 17 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">17</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Saturday, 17 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">17</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="18"
+                            data-day-timestamp="1768665600"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1768749051"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Sunday, 18 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">18</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Sunday, 18 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">18</span></span></span>
+                            </div>
+                        </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="19"
+                            data-day-timestamp="1768752000"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1768835451"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Monday, 19 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">19</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Monday, 19 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">19</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="20"
+                            data-day-timestamp="1768838400"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1768921851"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Tuesday, 20 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">20</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Tuesday, 20 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">20</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="21"
+                            data-day-timestamp="1768924800"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1769008251"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Wednesday, 21 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">21</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Wednesday, 21 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">21</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="22"
+                            data-day-timestamp="1769011200"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1769094651"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Thursday, 22 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">22</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Thursday, 22 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">22</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start today clickable"
+                            data-day="23"
+                            data-day-timestamp="1769097600"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1769181051" title="Today"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Friday, 23 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">23</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Friday, 23 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">23</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="24"
+                            data-day-timestamp="1769184000"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1769267451"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Saturday, 24 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">24</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Saturday, 24 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">24</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="25"
+                            data-day-timestamp="1769270400"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1769353851"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Sunday, 25 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">25</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Sunday, 25 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">25</span></span></span>
+                            </div>
+                        </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="26"
+                            data-day-timestamp="1769356800"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1769440251"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Monday, 26 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">26</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Monday, 26 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">26</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="27"
+                            data-day-timestamp="1769443200"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1769526651"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Tuesday, 27 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">27</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Tuesday, 27 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">27</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="28"
+                            data-day-timestamp="1769529600"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1769613051"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Wednesday, 28 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">28</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Wednesday, 28 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">28</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="29"
+                            data-day-timestamp="1769616000"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1769699451"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Thursday, 29 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">29</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Thursday, 29 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">29</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="30"
+                            data-day-timestamp="1769702400"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1769785851"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Friday, 30 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">30</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Friday, 30 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">30</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="31"
+                            data-day-timestamp="1769788800"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1769872251"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="sr-only">No events, Saturday, 31 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">31</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="sr-only">No events, Saturday, 31 January</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">31</span></span></span>
+                            </div>
+                        </td>
+                        <td class="dayblank">&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div></div>
+            <div class="footer"><div class="bottom">
+        <span class="footer-link">
+            <a href="https://lms-demo.intelsoft.sg/calendar/view.php?view=month&amp;time=1769181051&amp;course=1">Full calendar</a>
+        </span>
+        <span class="footer-link">
+            <a href="https://lms-demo.intelsoft.sg/calendar/managesubscriptions.php">Import or export calendars</a>
+        </span>
+</div></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-6"></span></section></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+<a id="sticky-to-top" href="#page-top" uk-totop uk-scroll></a>
+<footer id="page-footer" class="intelsoft-page-footer">
+    
+	
+	                        <div class="footer-blocks">
+	                            <div class="container-fluid">
+									<div class="row">
+										<div class="col-md-3">
+											<section data-region="footer-left" class="hidden-print">
+												<div class="block-pos-desc"><span>Footer (Left)</span></div>
+												
+												<aside id="block-region-footer-left" class="block-region" data-blockregion="footer-left" data-droptarget="1" aria-labelledby="footer-left-block-region-heading"><h2 class="sr-only" id="footer-left-block-region-heading">Blocks</h2><a href="#sb-2" class="sr-only sr-only-focusable">Skip Online users</a>
+
+<section id="inst136"
+     class=" block_online_users block  card mb-3"
+     role="region"
+     data-block="online_users"
+     data-instance-id="136"
+          aria-labelledby="instance-136-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h3 id="instance-136-header" class="h5 card-title d-inline">Online users</h3>
+
+
+        <div class="card-text content mt-3">
+            <div class="info">No online users (last 5 minutes)</div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-2"></span></aside>
+											</section>
+										</div>
+										<div class="col-md-3">
+											<section data-region="footer-middle" class="hidden-print">
+												<div class="block-pos-desc"><span>Footer (Middle)</span></div>
+												
+												<aside id="block-region-footer-middle" class="block-region" data-blockregion="footer-middle" data-droptarget="1" aria-labelledby="footer-middle-block-region-heading"><h2 class="sr-only" id="footer-middle-block-region-heading">Blocks</h2></aside>
+											</section>
+										</div>
+										<div class="col-md-3">
+											<section data-region="footer-middle-2" class="hidden-print">
+												<div class="block-pos-desc"><span>Footer (Middle 2)</span></div>
+												
+												<aside id="block-region-footer-middle-2" class="block-region" data-blockregion="footer-middle-2" data-droptarget="1" aria-labelledby="footer-middle-2-block-region-heading"><h2 class="sr-only" id="footer-middle-2-block-region-heading">Blocks</h2></aside>
+											</section>
+										</div>
+										<div class="col-md-3">
+											<section data-region="footer-right" class="hidden-print">
+												<div class="block-pos-desc"><span>Footer (Right)</span></div>
+												
+												<aside id="block-region-footer-right" class="block-region" data-blockregion="footer-right" data-droptarget="1" aria-labelledby="footer-right-block-region-heading"><h2 class="sr-only" id="footer-right-block-region-heading">Blocks</h2></aside>
+											</section>
+										</div>
+									</div>
+								
+	
+								
+								
+	                            </div>
+	                        </div>
+	
+	<div class="footer-bottom">	
+        <div class="container-fluid">
+            <div id="course-footer" class="row">
+                <div class="col-12">
+                    
+
+			            
+
+			            <p>Copyright © 2025 Intelsoft.  All Rights Reserved</p>
+
+                        <p class="helplink"><a href="https://docs.moodle.org/405/en/my/index"><i class="icon fa fa-book fa-fw " aria-hidden="true"  ></i>Documentation for this page</a></p>
+		
+                    <div class="logininfo">You are logged in as <a href="https://lms-demo.intelsoft.sg/user/profile.php?id=2" title="View profile">Admin User</a> (<a href="https://lms-demo.intelsoft.sg/login/logout.php?sesskey=SYCr1PSdME">Log out</a>)</div>
+                    <div class="tool_usertours-resettourcontainer"></div>
+        
+                    
+                    <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://lms-demo.intelsoft.sg/lib/requirejs.php/1769158585/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://lms-demo.intelsoft.sg/lib/javascript.php/1769158585/lib/jquery/jquery-3.7.1.min',
+        jqueryui: 'https://lms-demo.intelsoft.sg/lib/javascript.php/1769158585/lib/jquery/ui-1.13.2/jquery-ui.min',
+        jqueryprivate: 'https://lms-demo.intelsoft.sg/lib/javascript.php/1769158585/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://lms-demo.intelsoft.sg/lib/javascript.php/1769158585/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+M.util.js_pending('filter_mathjaxloader/loader'); require(['filter_mathjaxloader/loader'], function(amd) {amd.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"}); M.util.js_complete('filter_mathjaxloader/loader');});;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('en');
+});;
+M.util.js_pending('tool_courserating/rating'); require(['tool_courserating/rating'], function(amd) {amd.init(1, false); M.util.js_complete('tool_courserating/rating');});;
+
+require(
+[
+    'jquery',
+    'block_recentlyaccesseditems/main',
+],
+function(
+    $,
+    Main
+) {
+    var root = $('#block-recentlyaccesseditems-69738f7b4c29f69738f7b4c2a21');
+
+    Main.init(root);
+});
+;
+
+require(
+[
+    'jquery',
+    'block_recentlyaccessedcourses/main'
+],
+function(
+    $,
+    Main
+) {
+    var root = $('#block-recentlyaccessedcourses-69738f7b51b1b69738f7b4c2a22');
+    var userid = root.attr('data-userid');
+
+    Main.init(userid, root);
+});
+;
+
+require(['jquery', 'core_calendar/month_navigation_drag_drop'], function($, DragDrop) {
+    var root = $('#month-navigation-69738f7b5bd1069738f7b4c2a23-1');
+    DragDrop.init(root);
+});
+;
+
+require([
+    'jquery',
+    'core_calendar/month_view_drag_drop'
+], function(
+    $,
+    DragDrop
+) {
+    var root = $('#month-detailed-69738f7b5bd1069738f7b4c2a23-1');
+    DragDrop.init(root);
+});
+;
+
+require(['jquery', 'core_calendar/calendar', 'core_calendar/popover'], function($, Calendar, calendarPopover) {
+    const isCalendarBlock = true;
+    Calendar.init($("#calendar-month-69738f7b5bd1069738f7b4c2a23-1"), isCalendarBlock);
+});
+;
+M.util.js_pending('core_calendar/popover'); require(['core_calendar/popover'], function(amd) {M.util.js_complete('core_calendar/popover');});;
+
+M.util.js_pending('theme_boost/drawers:load');
+require(['theme_boost/drawers'], function() {
+    M.util.js_complete('theme_boost/drawers:load');
+});
+;
+
+    require(['core/moremenu'], function(moremenu) {
+        moremenu(document.querySelector('#moremenu-69738f7b5003c-navbar-nav'));
+    });
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, Controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new Controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+    require(['core/usermenu'], function(UserMenu) {
+        UserMenu.init();
+    });
+;
+
+require(['core/edit_switch'], function(editSwitch) {
+    editSwitch.init('69738f7b600ed69738f7b4c2a27-editingswitch');
+});
+;
+
+    require(['core/usermenu'], function(UserMenu) {
+        UserMenu.init();
+    });
+;
+
+const headerElement = document.querySelector("#page-header .d-flex.align-items-center > .mb-3.mt-3");
+if (headerElement && headerElement.textContent.length > 2) {
+    var greeting = headerElement.textContent.trim();
+    greeting = greeting.slice(0, -2);
+    headerElement.textContent = greeting;
+    headerElement.classList.add("visible");
+}
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
+    Drawer.init();
+    M.util.js_complete('theme_boost/loader');
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(5, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});;
+M.util.js_pending('core/storage_validation'); require(['core/storage_validation'], function(amd) {amd.init(1769181050); M.util.js_complete('core/storage_validation');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?delayStartupUntil=configured"></script>
+<script src="https://lms-demo.intelsoft.sg/theme/javascript.php/intelsoft2/1769158585/footer"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL","collapseall":"Collapse all","expandall":"Expand all"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"Are you sure you want to delete the selected comment(s)?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {M.util.help_popups.setup(Y);
+ M.util.js_pending('random69738f7b4c2a29'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random69738f7b4c2a29'); });
+})();
+//]]>
+</script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer></div>
+</div>
+
+
+
+</div>
+</div>
+
+</body></html>

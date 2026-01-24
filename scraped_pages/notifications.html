@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>Notifications | Intelsoft Info</title>
+    <link rel="shortcut icon" href="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/favicon2/64x64/1769158585/logo-1.png" />
+    <style>.tool_courserating-stars { color: #e59819; }
+.tool_courserating-ratingcolor { color: #b4690e;}
+.tool_courserating-norating .tool_courserating-stars { color: #a0a0a0;}
+.tool_courserating-barcolor { background-color: #e59819;}
+</style><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Notifications | Intelsoft Info" />
+<link rel="stylesheet" type="text/css" href="https://lms-demo.intelsoft.sg/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://lms-demo.intelsoft.sg/theme/styles.php/intelsoft2/1769158585_1/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/lms-demo.intelsoft.sg","apibase":"https:\/\/lms-demo.intelsoft.sg\/r.php\/api","homeurl":{},"sesskey":"SYCr1PSdME","sessiontimeout":"28800","sessiontimeoutwarning":"1200","themerev":"1769158585","slasharguments":1,"theme":"intelsoft2","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1769158585","admin":"admin","svgicons":true,"usertimezone":"Asia\/Singapore","language":"en","courseId":1,"courseContextId":2,"contextid":5,"contextInstanceId":2,"langrev":1769158585,"templaterev":"1769158585","siteId":1,"userId":2};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/lms-demo.intelsoft.sg\/lib\/yuilib\/3.18.1\/","comboBase":"https:\/\/lms-demo.intelsoft.sg\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/lms-demo.intelsoft.sg\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/lms-demo.intelsoft.sg\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/lms-demo.intelsoft.sg\/theme\/yui_combo.php?m\/1769158585\/","combine":true,"comboBase":"https:\/\/lms-demo.intelsoft.sg\/theme\/yui_combo.php?","ext":false,"root":"m\/1769158585\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_company-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_coursecompleted-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_trainingevent-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form","datatype-date-format"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-core-notification-confirm","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_teamsmeeting-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/lms-demo.intelsoft.sg\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/lms-demo.intelsoft.sg\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1769158585\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/lms-demo.intelsoft.sg\/lib\/javascript.php\/1769158585\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/lms-demo.intelsoft.sg\/lib\/javascript.php\/1769158585\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}},"logInclude":[],"logExclude":[],"logLevel":null};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<style>
+.format-tiles .course-content ul.tiles .tile.phototile.tilestyle-1 .photo-tile-text h3 {font-size: 18px!important;}
+.format-tiles .progress-indic svg{width: 50px!important;height: 50px!important;}
+.tool_courserating-widget{
+    float: right!important;
+}
+.footer-blocks .col-md-3 {border: 1px solid #fff!important; border-radius: 5px!important;}
+.block_course_overview, section.block_myoverview {
+    display: block!important;
+}
+.path-enrol .coursebox.grid { width:100%!important;}
+
+.coursebox .content .courseimage {
+    background-position: top!important;
+}
+.coursebox.grid .content .courseimage {
+    height: 300px!important;
+}
+a.aalink {
+    color: #BC0090;
+font-weight: 600;
+}
+.coursebox.grid:not(.min) .text-muted.coursecat{top: 14px!important;
+    left: 3px!important;}
+</style>
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  id="page-message-output-popup-notifications" class="format-site  path-message path-message-output path-message-output-popup chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam lms-demo-intelsoft-sg pagelayout-admin course-1 context-5 theme intelsoft m-45 iconset-lnr layout-full blockstyle-01 page-header-style-01 header-style-2">
+<div class="wrapper-intelsoft-outer">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+<div id="page-wrapper-outer">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="https://lms-demo.intelsoft.sg/lib/javascript.php/1769158585/lib/polyfills/polyfill.js"></script>
+<script src="https://lms-demo.intelsoft.sg/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.js"></script><script src="https://lms-demo.intelsoft.sg/theme/jquery.php/core/jquery-3.7.1.min.js"></script>
+<script src="https://lms-demo.intelsoft.sg/lib/javascript.php/1769158585/lib/javascript-static.js"></script>
+<script src="https://lms-demo.intelsoft.sg/theme/javascript.php/intelsoft2/1769158585/head"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+    
+
+<div id="page" data-region="mainpage" data-usertour="scroller" class="drawers  drag-container">
+<div id="page-top"></div>
+<div class="wrapper-intelsoft">
+
+
+
+	    
+	    <header id="main-header" class="clearfix top socials">
+	    
+	    	
+	    </header>
+	    
+	    <nav class="intelsoft-nav style-2 navbar fixed-top navbar-expand" aria-label="Site navigation">
+	        <a href="https://lms-demo.intelsoft.sg/my/" class="navbar-brand d-flex align-items-center m-0 mr-4 p-0 aabtn">
+	                <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logocompact2/300x300/1769158585/logo-1.png" class="logo mr-1" alt="Intelsoft Info">
+	        </a>
+	    
+	        <div class="d-none d-md-flex w-100">
+	                <div class="primary-navigation">
+	                    <nav class="moremenu navigation">
+	                        <ul id="moremenu-69738f7e4f687-navbar-nav" role="menubar" class="nav more-nav navbar-nav">
+	                                    <li data-key="home" class="nav-item" role="none" data-forceintomoremenu="false">
+	                                                <a role="menuitem" class="nav-link active "
+	                                                    href="https://lms-demo.intelsoft.sg/?redirect=0"
+	                                                    
+	                                                    aria-current="true"
+	                                                    data-disableactive="true"
+	                                                    
+	                                                >
+	                                                    Home
+	                                                </a>
+	                                    </li>
+	                                    <li data-key="myhome" class="nav-item" role="none" data-forceintomoremenu="false">
+	                                                <a role="menuitem" class="nav-link  "
+	                                                    href="https://lms-demo.intelsoft.sg/my/"
+	                                                    
+	                                                    
+	                                                    data-disableactive="true"
+	                                                    tabindex="-1"
+	                                                >
+	                                                    Dashboard
+	                                                </a>
+	                                    </li>
+	                                    <li data-key="mycourses" class="nav-item" role="none" data-forceintomoremenu="false">
+	                                                <a role="menuitem" class="nav-link  "
+	                                                    href="https://lms-demo.intelsoft.sg/my/courses.php"
+	                                                    
+	                                                    
+	                                                    data-disableactive="true"
+	                                                    tabindex="-1"
+	                                                >
+	                                                    My courses
+	                                                </a>
+	                                    </li>
+	                                    <li data-key="siteadminnode" class="nav-item" role="none" data-forceintomoremenu="false">
+	                                                <a role="menuitem" class="nav-link  "
+	                                                    href="https://lms-demo.intelsoft.sg/admin/search.php"
+	                                                    
+	                                                    
+	                                                    data-disableactive="true"
+	                                                    tabindex="-1"
+	                                                >
+	                                                    Site administration
+	                                                </a>
+	                                    </li>
+	                                    <li data-key="ioaddashboardnode" class="nav-item" role="none" data-forceintomoremenu="false">
+	                                                <a role="menuitem" class="nav-link  "
+	                                                    href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php"
+	                                                    
+	                                                    
+	                                                    data-disableactive="true"
+	                                                    tabindex="-1"
+	                                                >
+	                                                    IOMAD dashboard
+	                                                </a>
+	                                    </li>
+	                                    <li class="dropdown nav-item" role="none" data-forceintomoremenu="false">
+	                                        <a class="dropdown-toggle nav-link  " id="drop-down-69738f7e4f36b" role="menuitem" data-toggle="dropdown"
+	                                            aria-haspopup="true" aria-expanded="false" href="#" aria-controls="drop-down-menu-69738f7e4f36b"
+	                                            
+	                                            
+	                                            tabindex="-1"
+	                                        >
+	                                            Buy courses
+	                                        </a>
+	                                        <div class="dropdown-menu" role="menu" id="drop-down-menu-69738f7e4f36b" aria-labelledby="drop-down-69738f7e4f36b">
+	                                                        <a class="dropdown-item" role="menuitem" href="https://lms-demo.intelsoft.sg/blocks/iomad_commerce/shop.php"  data-disableactive="true" tabindex="-1"
+	                                                            
+	                                                        >
+	                                                            Go to shop
+	                                                        </a>
+	                                                        <a class="dropdown-item" role="menuitem" href="#"  data-disableactive="true" tabindex="-1"
+	                                                            
+	                                                        >
+	                                                            Your basket is empty
+	                                                        </a>
+	                                        </div>
+	                                    </li>
+	                                    <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
+	                                                <a role="menuitem" class="nav-link  "
+	                                                    href="https://lms-demo.intelsoft.sg/course/index.php?categoryid=3"
+	                                                    
+	                                                    
+	                                                    data-disableactive="true"
+	                                                    tabindex="-1"
+	                                                >
+	                                                    All courses
+	                                                </a>
+	                                    </li>
+	                            <li role="none" class="nav-item dropdown dropdownmoremenu d-none" data-region="morebutton">
+	                                <a class="dropdown-toggle nav-link " href="#" id="moremenu-dropdown-69738f7e4f687" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+	                                    More
+	                                </a>
+	                                <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdown" aria-labelledby="moremenu-dropdown-69738f7e4f687" role="menu">
+	                                </ul>
+	                            </li>
+	                        </ul>
+	                    </nav>
+	                </div>
+	            <ul class="navbar-nav my-1 px-1">
+	                <!-- page_heading_menu -->
+	                
+	            </ul>
+	            <div id="usernavigation" class="navbar-nav ml-auto">
+	                    <div class="search-margin"></div>
+	                        <div class="intelsoft-search-bar">
+	                            <form id="intelsoft-navbarsearch-form" autocomplete="off" method="get" action="https://lms-demo.intelsoft.sg/course/search.php" >
+							<div class="search-container">
+								<i class="intelsoft icon-search1" aria-hidden="true"></i>
+								<input id="navbarsearchbox" type="text" name="q" data-region="input" autocomplete="off" aria-label="Search courses" placeholder="Search courses">
+								<label for="navbarsearchbox" class="intelsoft-sr-only">Search courses</label>
+							</div>
+						</form>
+	                        </div>
+	                    <div class="divider border-left h-75 align-self-center mx-1"></div>
+	                    <div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="2"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link icon-no-margin"
+        data-region="popover-region-toggle"
+        aria-controls="popover-region-container-69738f7e5180769738f7e5082f2"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-label=" Show notification window with no new notifications   "
+        title=" Show notification window with no new notifications   "
+        tabindex="0"
+        role="button">
+                <i class="icon fa fa-bell fa-fw " aria-hidden="true"  ></i>
+        <div
+            class="count-container hidden"
+            data-region="count-container"
+            aria-hidden=true
+        >
+            0
+        </div>
+
+    </div>
+    <div 
+        id="popover-region-container-69738f7e5180769738f7e5082f2"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Mark all as read"
+           data-action="mark-all-read"
+           role="button"
+           aria-label="Mark all as read">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true"  ></i></span>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-spinner fa-spin fa-fw "  title="Loading" role="img" aria-label="Loading"></i></span>
+        </a>
+            <a href="https://lms-demo.intelsoft.sg/message/notificationpreferences.php"
+               title="Notification preferences"
+               aria-label="Notification preferences">
+                <i class="icon fa fa-gear fa-fw " aria-hidden="true"  ></i></a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-spinner fa-spin fa-fw "  title="Loading" role="img" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://lms-demo.intelsoft.sg/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="companymenu">
+    <div class="dropdown show">
+            <a href="#"
+               role="button"
+               id="company-menu-toggle"
+               data-toggle="dropdown"
+               aria-label="Company menu"
+               aria-haspopup="true"
+               aria-controls="company-action-menu"
+               class="btn dropdown-toggle"
+               aria-expanded="true">
+                <span class="companybutton">
+                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo2/0x25/1769158585/logo-1.png" alt="company logo">
+                    Intelsoft
+                </span>
+            </a>
+            <div id="company-action-menu" class="dropdown-menu dropdown-menu">
+                <div id="companymenu-carousel" class="carousel slide" data-touch="false" data-interval="false" data-keyboard="false">
+                    <div class="carousel-inner">
+                        <div id="carousel-item-main" class="carousel-item active" role="menu" tabindex="-1" aria-label="Company">
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=3" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo3/0x25/1769158585/Ministry_of_Education_%28Singapore%29_logo.svg.png">
+                                    Ministry of Education
+                                </a>
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=8" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo/0x25/1769158585/wsg-logo%20%281%29.png">
+                                    MOH
+                                </a>
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=9" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo/0x25/1769158585/wsg-logo%20%281%29.png">
+                                    Cardiology
+                                </a>
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=5" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo5/0x25/1769158585/id-fGDxQtq_1747647926525.png">
+                                    Dermatology
+                                </a>
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=4" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo4/0x25/1769158585/id-fGDxQtq_1747647926525.png">
+                                    Opthalmology
+                                </a>
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=6" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo6/0x25/1769158585/id-fGDxQtq_1747647926525.png">
+                                    Pediatrics
+                                </a>
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=10" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo/0x25/1769158585/wsg-logo%20%281%29.png">
+                                    Pulmonology
+                                </a>
+                                <a href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php?company=1" class="dropdown-item" role="menuitem" tabindex="-1">
+                                        <img src="https://lms-demo.intelsoft.sg/pluginfile.php/1/core_admin/logo1/0x25/1769158585/wsg-logo.png">
+                                    WSG
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div><div class="local-adminer-nav-action">
+    <a id="local-adminer-action-69738f7e53dbd69738f7e5082f3" href="https://lms-demo.intelsoft.sg/local/adminer/lib/run_adminer.php?server&amp;username" class="nav-link icon-no-margin" target="_blank">
+        <i class="icon fa fa-database fa-fw navicon" title="Moodle Adminer"></i>
+    </a>
+</div>
+	                    <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
+	                            
+	                            <div class="usermenu">
+	                                    <div class="dropdown show">
+	                                        <a href="#" id="user-menu-toggle" data-toggle="dropdown" aria-label="User menu"
+	                                           aria-haspopup="true" aria-controls="user-action-menu" class="dropdown-toggle">Admin User
+	                                            <span class="userbutton">
+	                                                <span class="avatars">
+	                                                        <span class="avatar current">
+	                                                            <img src="https://lms-demo.intelsoft.sg/pluginfile.php/5/user/icon/intelsoft2/f2?rev=1985" class="userpicture" width="35" height="35" alt="" />
+	                                                        </span>
+	                                                </span>
+	                                            </span>
+	                                        </a>
+	                                        <div id="user-action-menu" class="dropdown-menu dropdown-menu-right">
+	                                            <div id="usermenu-carousel" class="carousel slide" data-touch="false" data-interval="false" data-keyboard="false">
+	                                                <div class="carousel-inner">
+	                                                    <div id="carousel-item-main" class="carousel-item active" role="menu" tabindex="-1" aria-label="User">
+	                                                                <a href="https://lms-demo.intelsoft.sg/user/profile.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Profile
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/grade/report/overview/index.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Grades
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/calendar/view.php?view=month" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Calendar
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/user/files.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Private files
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/reportbuilder/index.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Reports
+	                                                                </a>
+	                                                            
+	                                                            <div class="dropdown-divider"></div>
+	                                                                <a href="https://lms-demo.intelsoft.sg/user/preferences.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Preferences
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/course/switchrole.php?id=1&amp;switchrole=-1&amp;returnurl=%2Fmessage%2Foutput%2Fpopup%2Fnotifications.php%3Fid%3D0" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Switch role to...
+	                                                                </a>
+	                                                            <div class="dropdown-divider"></div>
+	                                                                <a href="https://lms-demo.intelsoft.sg/login/logout.php?sesskey=SYCr1PSdME" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Log out
+	                                                                </a>
+	                                                            
+	                                                    </div>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                            </div>
+	                    </div>
+	            </div>
+	        </div>
+	        <div class="divider border-start h-75 align-self-center ms-1 me-3"></div>
+<form action="https://lms-demo.intelsoft.sg/editmode.php" method="post" class="d-flex align-items-center editmode-switch-form">
+    <div class="input-group">
+        <label class="me-2 mb-0 " for="69738f7e540d569738f7e5082f4-editingswitch">
+            Edit mode
+        </label>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="setmode" class="custom-control-input" id="69738f7e540d569738f7e5082f4-editingswitch" data-context="5" data-pageurl="https://lms-demo.intelsoft.sg/message/output/popup/notifications.php?id=0">
+            <span class="custom-control-label">&nbsp;</span>
+        </div>
+    </div>
+    <input type="hidden" name="sesskey" value="SYCr1PSdME">
+    <input type="hidden" name="pageurl" value="https://lms-demo.intelsoft.sg/message/output/popup/notifications.php?id=0">
+    <input type="hidden" name="context" value="5">
+    <noscript>
+        <input type="submit" value="Set mode">
+    </noscript>
+</form>
+	        <div class="d-flex d-md-none align-items-center ml-auto">
+	            <button class="mobile-menu-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon data-toggle="collapse" data-target="#mobile-menu-collapse" aria-expanded="false" aria-controls="mobile-menu-collapse"></button>
+	        </div>
+	    </nav>
+	    
+	    <div class="mobile-menu d-block d-md-none">
+	        <nav class="navbar mobile-menu w-100 collapse" id="mobile-menu-collapse">
+	                <div class="mobile-menu-top-border"></div>
+	                <div class="mobile-menu-top">
+	                    <div class="mobile_navbar_plugin"><a class="btn btn-link" href="https://lms-demo.intelsoft.sg/message/output/popup/notifications.php" role="button"><i class="icon fa fa-bell-o fa-fw " role="img"></i></a><a class="btn btn-link pl-0" href="https://lms-demo.intelsoft.sg/message/index.php" role="button"><i class="icon fa fa-comment-o fa-fw" role="img"></i></a></div>
+	                    <div class="d-flex usermenu-container" data-region="usermenu">
+	                            
+	                            <div class="usermenu">
+	                                    <div class="dropdown show">
+	                                        <a href="#" id="user-menu-toggle" data-toggle="dropdown" aria-label="User menu"
+	                                           aria-haspopup="true" aria-controls="user-action-menu" class="dropdown-toggle">Admin User
+	                                            <span class="userbutton">
+	                                                <span class="avatars">
+	                                                        <span class="avatar current">
+	                                                            <img src="https://lms-demo.intelsoft.sg/pluginfile.php/5/user/icon/intelsoft2/f2?rev=1985" class="userpicture" width="35" height="35" alt="" />
+	                                                        </span>
+	                                                </span>
+	                                            </span>
+	                                        </a>
+	                                        <div id="user-action-menu" class="dropdown-menu dropdown-menu-right">
+	                                            <div id="usermenu-carousel" class="carousel slide" data-touch="false" data-interval="false" data-keyboard="false">
+	                                                <div class="carousel-inner">
+	                                                    <div id="carousel-item-main" class="carousel-item active" role="menu" tabindex="-1" aria-label="User">
+	                                                                <a href="https://lms-demo.intelsoft.sg/user/profile.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Profile
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/grade/report/overview/index.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Grades
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/calendar/view.php?view=month" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Calendar
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/user/files.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Private files
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/reportbuilder/index.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Reports
+	                                                                </a>
+	                                                            
+	                                                            <div class="dropdown-divider"></div>
+	                                                                <a href="https://lms-demo.intelsoft.sg/user/preferences.php" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Preferences
+	                                                                </a>
+	                                                            
+	                                                                <a href="https://lms-demo.intelsoft.sg/course/switchrole.php?id=1&amp;switchrole=-1&amp;returnurl=%2Fmessage%2Foutput%2Fpopup%2Fnotifications.php%3Fid%3D0" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Switch role to...
+	                                                                </a>
+	                                                            <div class="dropdown-divider"></div>
+	                                                                <a href="https://lms-demo.intelsoft.sg/login/logout.php?sesskey=SYCr1PSdME" class="dropdown-item" role="menuitem" tabindex="-1">
+	                                                                        
+	                                                                    Log out
+	                                                                </a>
+	                                                            
+	                                                    </div>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                            </div>
+	                    </div>
+	                </div>
+	                <div class="mobile-menu-top-border"></div>
+	            <li class="nav-item"><a class="nav-link" href="https://lms-demo.intelsoft.sg/?redirect=0">Home</a></li><li class="nav-item"><a class="nav-link" href="https://lms-demo.intelsoft.sg/my/">Dashboard</a></li><li class="nav-item"><a class="nav-link" href="https://lms-demo.intelsoft.sg/my/courses.php">My courses</a></li><li class="nav-item"><a class="nav-link" href="https://lms-demo.intelsoft.sg/admin/search.php">Site administration</a></li>
+	            <li class="nav-item">
+    <a class="nav-link" href="https://lms-demo.intelsoft.sg/blocks/iomad_company_admin/index.php" >IOMAD dashboard</a>
+</li><li class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-69738f7e5462d69738f7e5082f5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"  aria-controls="drop-down-menu-69738f7e5462d69738f7e5082f5">
+        Buy courses
+    </a>
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-69738f7e5462d69738f7e5082f5" aria-labelledby="drop-down-69738f7e5462d69738f7e5082f5">
+                <a class="dropdown-item" role="menuitem" href="https://lms-demo.intelsoft.sg/blocks/iomad_commerce/shop.php"  >Go to shop</a>
+                <a class="dropdown-item" role="menuitem" href="#"  >Your basket is empty</a>
+    </div>
+</li><li class="nav-item">
+    <a class="nav-link" href="https://lms-demo.intelsoft.sg/course/index.php?categoryid=3" >All courses</a>
+</li>
+	        </nav>
+	    </div>
+	    
+	    <div class="nav-sub">
+	    </div>    
+    <div class="drawer-toggles d-flex">
+    </div>
+
+    <div id="intelsoft-page-header">
+        <header id="page-header" class="header-maxwidth d-print-none">
+    <div class="w-100">
+        <div class="d-flex flex-wrap">
+            <div id="page-navbar">
+                <nav aria-label="Navigation bar">
+    <ol class="breadcrumb"></ol>
+</nav>
+            </div>
+            <div class="ms-auto d-flex">
+                
+            </div>
+            <div id="course-header">
+                
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+                    <div class="me-auto">
+                        <div class="page-context-header d-flex align-items-center mb-2">
+    <div class="page-header-image">
+        <a href="https://lms-demo.intelsoft.sg/user/profile.php?id=2" class="d-inline-block aabtn"><img src="https://lms-demo.intelsoft.sg/pluginfile.php/5/user/icon/intelsoft2/f1?rev=1985" class="userpicture" width="100" height="100" alt="Santhosh Sampath" title="Santhosh Sampath" /></a>
+    </div>
+    <div class="page-header-headings">
+        <h1 class="h2 mb-0">Admin User</h1>
+    </div>
+</div>
+                    </div>
+            <div class="header-actions-container ms-auto" data-region="header-actions-container">
+            </div>
+        </div>
+    </div>
+</header>
+    </div>
+    <div id="page-content-footer">
+    <div id="page-content" class="row">
+        <div id="region-main-box" class="col-xs-12 col-12">
+            <section id="region-main">
+                <div class="card card-block">
+                    <div role="main"><span id="maincontent"></span><h2>Notifications</h2><div class="notification-area" data-region="notification-area" data-user-id="2">
+    <div class="control-area" data-region="control-area">
+        <div class="header"></div>
+        <div class="content" data-region="content"></div>
+        <div class="empty-text">You have no notifications</div>
+        <span class="loading-icon icon-no-margin"><i class="icon fa fa-spinner fa-spin fa-fw "  title="Loading" role="img" aria-label="Loading"></i></span>
+    </div>
+    <div class="content-area" data-region="content-area">
+        <div class="toggle-mode">
+            <button class="btn btn-link" data-action="toggle-mode">Back</button>
+        </div>
+        <div class="header" data-region="header"></div>
+        <div class="content" data-region="content"></div>
+        <div class="empty-text">Select from the list of notifications on the side to view more details</div>
+        <div class="footer" data-region="footer"></div>
+    </div>
+</div></div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    
+    <a id="sticky-to-top" href="#page-top" uk-totop uk-scroll></a>
+    <footer id="page-footer" class="intelsoft-page-footer">
+        
+    	
+    	                        <div class="footer-blocks">
+    	                            <div class="container-fluid">
+    									<div class="row">
+    										<div class="col-md-3">
+    											<section data-region="footer-left" class="hidden-print">
+    												<div class="block-pos-desc"><span>Footer (Left)</span></div>
+    												
+    												<aside id="block-region-footer-left" class="block-region" data-blockregion="footer-left" data-droptarget="1" aria-labelledby="footer-left-block-region-heading"><h2 class="sr-only" id="footer-left-block-region-heading">Blocks</h2></aside>
+    											</section>
+    										</div>
+    										<div class="col-md-3">
+    											<section data-region="footer-middle" class="hidden-print">
+    												<div class="block-pos-desc"><span>Footer (Middle)</span></div>
+    												
+    												<aside id="block-region-footer-middle" class="block-region" data-blockregion="footer-middle" data-droptarget="1" aria-labelledby="footer-middle-block-region-heading"><h2 class="sr-only" id="footer-middle-block-region-heading">Blocks</h2></aside>
+    											</section>
+    										</div>
+    										<div class="col-md-3">
+    											<section data-region="footer-middle-2" class="hidden-print">
+    												<div class="block-pos-desc"><span>Footer (Middle 2)</span></div>
+    												
+    												<aside id="block-region-footer-middle-2" class="block-region" data-blockregion="footer-middle-2" data-droptarget="1" aria-labelledby="footer-middle-2-block-region-heading"><h2 class="sr-only" id="footer-middle-2-block-region-heading">Blocks</h2></aside>
+    											</section>
+    										</div>
+    										<div class="col-md-3">
+    											<section data-region="footer-right" class="hidden-print">
+    												<div class="block-pos-desc"><span>Footer (Right)</span></div>
+    												
+    												<aside id="block-region-footer-right" class="block-region" data-blockregion="footer-right" data-droptarget="1" aria-labelledby="footer-right-block-region-heading"><h2 class="sr-only" id="footer-right-block-region-heading">Blocks</h2></aside>
+    											</section>
+    										</div>
+    									</div>
+    								
+    	
+    								
+    								
+    	                            </div>
+    	                        </div>
+    	
+    	<div class="footer-bottom">	
+            <div class="container-fluid">
+                <div id="course-footer" class="row">
+                    <div class="col-12">
+                        
+    
+    			            
+    
+    			            <p>Copyright © 2025 Intelsoft.  All Rights Reserved</p>
+    
+                            <p class="helplink"><a href="https://docs.moodle.org/405/en/message/output/popup/notifications"><i class="icon fa fa-book fa-fw " aria-hidden="true"  ></i>Documentation for this page</a></p>
+    		
+                        <div class="logininfo">You are logged in as <a href="https://lms-demo.intelsoft.sg/user/profile.php?id=2" title="View profile">Admin User</a> (<a href="https://lms-demo.intelsoft.sg/login/logout.php?sesskey=SYCr1PSdME">Log out</a>)</div>
+                        <div class="tool_usertours-resettourcontainer"></div>
+            
+                        
+                        <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://lms-demo.intelsoft.sg/lib/requirejs.php/1769158585/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://lms-demo.intelsoft.sg/lib/javascript.php/1769158585/lib/jquery/jquery-3.7.1.min',
+        jqueryui: 'https://lms-demo.intelsoft.sg/lib/javascript.php/1769158585/lib/jquery/ui-1.13.2/jquery-ui.min',
+        jqueryprivate: 'https://lms-demo.intelsoft.sg/lib/javascript.php/1769158585/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://lms-demo.intelsoft.sg/lib/javascript.php/1769158585/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+M.util.js_pending('filter_mathjaxloader/loader'); require(['filter_mathjaxloader/loader'], function(amd) {amd.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"}); M.util.js_complete('filter_mathjaxloader/loader');});;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('en');
+});;
+M.util.js_pending('tool_courserating/rating'); require(['tool_courserating/rating'], function(amd) {amd.init(1, false); M.util.js_complete('tool_courserating/rating');});;
+
+    require(['core/moremenu'], function(moremenu) {
+        moremenu(document.querySelector('#moremenu-69738f7e4f687-navbar-nav'));
+    });
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, Controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new Controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+    require(['core/usermenu'], function(UserMenu) {
+        UserMenu.init();
+    });
+;
+
+require(['core/edit_switch'], function(editSwitch) {
+    editSwitch.init('69738f7e540d569738f7e5082f4-editingswitch');
+});
+;
+
+    require(['core/usermenu'], function(UserMenu) {
+        UserMenu.init();
+    });
+;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
+    Drawer.init();
+    M.util.js_complete('theme_boost/loader');
+});
+;
+
+require(['jquery', 'message_popup/notification_area_control_area', 'message_popup/notification_area_content_area'],
+    function($, ControlArea, ContentArea) {
+
+    var userId = 2;
+    var controlArea = new ControlArea($('[data-region="control-area"]'), userId);
+    controlArea.loadMoreNotifications();
+
+    new ContentArea($('[data-region="content-area"]'), userId);
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(5, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});;
+M.util.js_pending('core/storage_validation'); require(['core/storage_validation'], function(amd) {amd.init(1769181050); M.util.js_complete('core/storage_validation');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?delayStartupUntil=configured"></script>
+<script src="https://lms-demo.intelsoft.sg/theme/javascript.php/intelsoft2/1769158585/footer"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL","collapseall":"Collapse all","expandall":"Expand all"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"Are you sure you want to delete the selected comment(s)?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {M.util.help_popups.setup(Y);
+ M.util.js_pending('random69738f7e5082f6'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random69738f7e5082f6'); });
+})();
+//]]>
+</script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>    </div>
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</body></html>

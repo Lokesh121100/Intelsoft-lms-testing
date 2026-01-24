@@ -1,33 +1,6 @@
 # Intelsoft LMS Testing - Issue Report
 
-## Issue #1: Certificates Display - "Nothing to Display" Error
-
-| Field        | Details                            |
-| ------------ | ---------------------------------- |
-| **Severity** | Medium                             |
-| **Location** | My Courses → Download Certificates |
-| **Status**   | Open                               |
-
-### Description
-
-The "Download certificates" section displays "Nothing to display" message even when the user is enrolled in multiple courses (60 courses visible in the system).
-
-### Expected Result
-
-- If courses are completed: Certificates should be available for download
-- If no courses completed: A clear message like "No certificates earned yet - complete a course to earn certificates"
-
-### Actual Result
-
-Shows "Nothing to display" with no additional context or guidance for the user.
-
-### Screenshot
-
-![Issue 1 - Certificates Nothing to Display](assets/issue_certificates_nothing_to_display.png)
-
----
-
-## Issue #2: SCORM Content Loading with Play Button
+## Issue #1: SCORM Content Loading with Play Button
 
 | Field        | Details                              |
 | ------------ | ------------------------------------ |
@@ -53,7 +26,7 @@ Content appears stuck with a play button overlay on a dark background, potential
 
 ---
 
-## Issue #3: SCORM Media Blocking (Content Security Policy)
+## Issue #2: SCORM Media Blocking (Content Security Policy)
 
 | Field        | Details                 |
 | ------------ | ----------------------- |
@@ -90,7 +63,7 @@ media-src 'self' blob: data: https://intelsoft.info
 
 ---
 
-## Issue #4: Font Decoding Errors
+## Issue #3: Font Decoding Errors
 
 | Field        | Details   |
 | ------------ | --------- |
@@ -119,7 +92,7 @@ Font files fail to decode, potentially causing inconsistent typography or fallba
 
 ---
 
-## Issue #5: Private Files Section - Loading State
+## Issue #4: Private Files Section - Loading State
 
 | Field        | Details                    |
 | ------------ | -------------------------- |
@@ -137,7 +110,7 @@ The Private Files section file manager consistently displays a "Loading..." spin
 
 ---
 
-## Issue #6: Placeholder Text on Manager Dashboard Banner
+## Issue #5: Placeholder Text on Manager Dashboard Banner
 
 | Field         | Details                    |
 | ------------- | -------------------------- |
@@ -164,7 +137,7 @@ The banner displays Lorem ipsum placeholder text: "Lorem ipsum dolor sit amet, c
 
 ---
 
-## Issue #7: Course Search System Error
+## Issue #6: Course Search System Error
 
 | Field         | Details                            |
 | ------------- | ---------------------------------- |
@@ -225,7 +198,7 @@ A complete video recording of the testing session is available:
 
 ---
 
-## Issue #8: Public Homepage Placeholder Content (NEW - Public Access)
+## Issue #7: Public Homepage Placeholder Content (NEW - Public Access)
 
 | Field        | Details                                  |
 | ------------ | ---------------------------------------- |
@@ -253,7 +226,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 ### Actual Result
 
-- Lorem ipsum placeholder text prominently displayed
+- - Lorem ipsum placeholder text prominently displayed
 - Unprofessional appearance for public visitors
 - Content appears incomplete or under development
 
@@ -267,7 +240,7 @@ The homepage is accessible without login, meaning any internet user can see this
 
 ---
 
-## Issue #9: Missing Course Progress Indicators
+## Issue #8: Missing Course Progress Indicators
 
 | Field        | Details                |
 | ------------ | ---------------------- |
@@ -293,7 +266,7 @@ No progress information is visible on course cards, leaving users unaware of the
 
 ---
 
-## Issue #10: Unclear Activity Completion Tracking
+## Issue #9: Unclear Activity Completion Tracking
 
 | Field        | Details              |
 | ------------ | -------------------- |
@@ -319,7 +292,7 @@ Activity completion status is invisible or missing, making self-pacing difficult
 
 ---
 
-## Issue #11: Grade Report System Warning
+## Issue #10: Grade Report System Warning
 
 | Field        | Details            |
 | ------------ | ------------------ |
@@ -345,7 +318,7 @@ Users are presented with an alarming warning message suggesting data loss or sys
 
 ---
 
-## Issue #12: Manager Role Permissions Missing (Add Course / Site Admin)
+## Issue #11: Manager Role Permissions Missing (Add Course / Site Admin)
 
 | Field        | Details                         |
 | ------------ | ------------------------------- |
@@ -374,7 +347,7 @@ The user is restricted to viewing existing courses without creation capabilities
 
 ---
 
-## Issue #13: Missing Edit Mode & Enrollment Controls
+## Issue #12: Missing Edit Mode & Enrollment Controls
 
 | Field        | Details                    |
 | ------------ | -------------------------- |
@@ -410,40 +383,7 @@ The interface is locked in "View only" mode for the Manager, similar to a Studen
 
 ---
 
-## Summary Table
-
-| Issue # | Description                        | Severity | Impact                       |
-| ------- | ---------------------------------- | -------- | ---------------------------- |
-| 1       | Certificates "Nothing to Display"  | Medium   | User confusion               |
-| 2       | SCORM Content Loading State        | High     | Training access blocked      |
-| 3       | CSP Blocking Media                 | High     | Audio/Video fails            |
-| 4       | Font Decoding Errors               | Low      | Visual inconsistency         |
-| 5       | Private Files Loading              | Low      | File management delay        |
-| 6       | Lorem Ipsum Placeholder Text       | Medium   | Unprofessional appearance    |
-| 7       | Course Search System Error         | Critical | Search functionality broken  |
-| 8       | Public Homepage Placeholder        | High     | Unprofessional public image  |
-| 9       | Missing Course Progress Indicators | Medium   | User loses track of progress |
-| 10      | Unclear Activity Completion        | Medium   | Poor user experience         |
-| 11      | Grade Report System Warning        | High     | User alarm/confusion         |
-| 12      | Manager Permissions Missing        | Critical | Role is ineffective          |
-| 13      | Edit Mode & Enrollment Missing     | High     | Cannot manage course content |
-
----
-
-## Recommendations
-
-1.  **Critical Priority:** Fix Course Search functionality (Issue #7) - backend null reference error
-2.  **Critical Priority:** Restore "Manager" permissions (Issue #12 & #13) to allow course creation and editing.
-3.  **Immediate Priority:** Fix CSP policy to allow SCORM media content
-4.  **High Priority:** Turn off debug/maintenance warnings in Grade Reports (Issue #11)
-5.  **High Priority:** Replace public homepage Lorem ipsum placeholder text (Issue #8)
-6.  **High Priority:** Investigate SCORM content loading issues
-7.  **Medium Priority:** Enable visual progress bars on course cards (Issue #9)
-8.  **Medium Priority:** Replace manager dashboard Lorem Ipsum text with meaningful content (Issue #6)
-9.  **Medium Priority:** Add clearer messaging for empty certificate states
-10. **Low Priority:** Fix font file serving configuration
-
-## Issue #14: Public Site Issues (Guest View)
+## Issue #13: Public Site Issues (Guest View)
 
 | Field        | Details                        |
 | ------------ | ------------------------------ |
@@ -477,10 +417,6 @@ A public audit of `lms-demo.intelsoft.sg` revealed significant incomplete conten
 2.  **Development**: Debug the `[[nocourseduration]]` shortcode in the course page template.
 3.  **Layout**: Add "Contact Us" and "Privacy Policy" pages and link them in the footer.
 
-- "Lorem ipsum" visible to public.
-- `[[nocourseduration]]` visible to public.
-- Footer is empty.
-
 ### Screenshots
 
 **Guest Homepage (Lorem Ipsum):**
@@ -491,42 +427,7 @@ A public audit of `lms-demo.intelsoft.sg` revealed significant incomplete conten
 
 ---
 
-## Issue #15: Notification System Error & Guest Access Bug
-
-| Field        | Details                            |
-| ------------ | ---------------------------------- |
-| **Severity** | High                               |
-| **Location** | Top Navigation Bar → Notifications |
-| **Status**   | Open                               |
-
-### Description
-
-When clicking the Notification icon in the top navigation bar:
-
-1.  The popup displays a persistent loading spinner and fails to load content.
-2.  Clicking "See all" redirects to an error page stating "Guest user can not edit messaging options", which is an incorrect context for viewing notifications.
-
-### Actual Result
-
-- **Popup:** stuck on loading spinner.
-- **See All:** Error message "Guest user can not edit messaging options".
-
-### Expected Result
-
-- Notifications should load relevant alerts or "No notifications" state.
-- "See all" should take the user to a full notifications page, or prompt for login if access is restricted (not an editing permission error).
-
-### Screenshots
-
-**Loading Spinner:**
-![Notification Loading Issue](assets/issue_notification_loading_spinner.png)
-
-**Guest Error Message:**
-![Notification Guest Error](assets/issue_notification_guest_error.png)
-
----
-
-## Issue #16: Empty Course Category Listings
+## Issue #14: Empty Course Category Listings
 
 | Field        | Details                                    |
 | ------------ | ------------------------------------------ |
@@ -552,3 +453,125 @@ When navigating to a specific course category (e.g., "Pulmonology") or searching
 
 **Empty Category View:**
 ![Empty Course Category](assets/issue_empty_course_category.png)
+
+---
+
+## Issue #15: Certificate Text Errors (Typos & Grammar)
+
+| Field        | Details                                   |
+| ------------ | ----------------------------------------- |
+| **Severity** | High (Reputation Risk)                    |
+| **Location** | Certificate of Completion (Ophthalmology) |
+| **Status**   | Open                                      |
+
+### Description
+
+The generated Certificate of Completion contains significant spelling and grammatical errors that impact professional credibility.
+
+### Identified Errors
+
+1.  **Grammar**: "This certificate is **certify** that" (Incorrect). Should be "This certificate **certifies** that" or "This is to certify that".
+2.  **Spelling**: Course name "Ophthalmology" is misspelled as "**Opthalmology**" (Missing 'h').
+3.  **Layout**: The User Name ("Ophthalmology User") overlaps with the introductory text line.
+
+### Expected Result
+
+- Text should read: "This is to certify that" OR "This certificate certifies that".
+- Course name should be spelled correctly: "**Ophthalmology**".
+- Layout should explicitly separate the prompt text from the user's name.
+
+### Evidence
+
+![Issue 17 - Certificate Errors](assets/issue_certificate_typo.png)
+
+---
+
+## Issue #16: Admin Footer Verification Failure
+
+| Field        | Details                |
+| ------------ | ---------------------- |
+| **Severity** | Low                    |
+| **Location** | Admin Dashboard Footer |
+| **Status**   | Open                   |
+
+### Description
+
+The verification of the footer content failed. The expected text "Powered by Moodle" is missing from the footer. "Lorem Ipsum" placeholder text is NOT present (PASS), but the branding attribution is missing.
+
+### Expected Result
+
+Footer should likely contain "Powered by Moodle" (unless white-labeled) and valid copyright info.
+
+### Actual Result
+
+"Powered by Moodle" string is missing from the footer.
+
+---
+
+## Issue #17: Admin Course Search Failure
+
+| Field        | Details                       |
+| ------------ | ----------------------------- |
+| **Severity** | Medium                        |
+| **Location** | Global Search / Course Search |
+| **Status**   | Open                          |
+
+### Description
+
+Searching for the known course term "Ophthalmology" returned no results in the Admin view.
+
+### Expected Result
+
+The search should return the relevant "Ophthalmology" courses if they exist in the system (previously verified in User tests).
+
+### Actual Result
+
+### Actual Result
+
+No courses found when searching for "Ophthalmology".
+
+### Root Cause Discovery
+
+The course exists in the system but is misspelled as "**Opthalmology**" (missing the first 'h'). Searching for this incorrect spelling returns the course.
+
+### Recommended Fix
+
+Rename the course to "Ophthalmology" so users can find it with the correct spelling.
+
+---
+
+## Issue #18: Student Course Access Failure (Critical)
+
+| Field        | Details                         |
+| ------------ | ------------------------------- |
+| **Severity** | **Critical**                    |
+| **Location** | Student Dashboard / Course Page |
+| **Role**     | Student (Learner)               |
+| **Status**   | Open                            |
+
+### Description
+
+After a Student is enrolled in a course (e.g., "AWS Check Course"), the course **does not appear** on their Dashboard. Attempting to access the course directly by URL redirects or shows an "Enrol me" page, indicating the system does not recognize the enrollment.
+
+### Steps to Reproduce
+
+1.  Log in as Admin.
+2.  Enrol a user (e.g., `demolearner@moe.gov.sg`) into `AWS Check Course` as "Student".
+3.  Log out and Log in as `demolearner@moe.gov.sg`.
+4.  Check "My courses" on Dashboard.
+5.  Attempt to access `/course/view.php?id=[ID]`.
+
+### Expected Result
+
+-   Course should appear on the Dashboard cards.
+-   Direct link should open the Course Home Page.
+
+### Actual Result
+
+-   Dashboard shows "No courses found".
+-   Direct link requests enrollment ("Enrol me") again.
+
+### Evidence
+
+-   **Verification Script Log**: `[X] No courses found on Dashboard.`
+-   **Enrollment Confirmation**: Admin panel shows user is enrolled (Active).

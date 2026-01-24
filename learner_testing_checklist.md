@@ -4,17 +4,19 @@
 
 ## 1. Authentication & Profile
 
-- [ ] **Login:** Verify login with `sandboxlearner2` / `Password@123`.
-- [ ] **Dashboard:** Check if enrolled courses are visible.
-- [ ] **Profile:** Try to update profile picture or description.
-- [ ] **Notifications:** Check if the notification bell works (given Issue #15).
+- [x] **Login** (Verified by Script): Verify login with `demolearner@moe.gov.sg` / `Password@123`.
+- [x] **Dashboard** (Verified by Script): Check if enrolled courses are visible (Result: Dashboard loads, but courses not listed).
+- [x] **Profile** (Verified by Script): Try to update profile picture or description (Verified Read Access).
+- [ ] **Notifications**: Check if the notification bell works (given Issue #15).
 
 ## 2. Course Engagement
 
-- [ ] **Course Access:** Open a specific course (e.g., "Digital & Technology Fundamentals").
-- [ ] **Content Navigation:** Click through sections/modules.
-- [ ] **Completion Tracking:** Verify if "Mark as done" buttons or checkboxes work.
-- [ ] **Resource Access:** Download a PDF or view a page.
+- [ ] **Course Access**: Open a specific course (Result: Failed to access directly).
+- [ ] **Content Navigation**: Click through sections/modules.
+- [ ] **Completion Tracking**: Verify if "Mark as done" buttons or checkboxes work.
+- [ ] **Resource Access**: Download a PDF or view a page.
+
+> **Note**: Course access failed despite valid enrollment. Logged as Issue #20.
 
 ## 3. Assessments
 
